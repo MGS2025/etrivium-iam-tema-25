@@ -10,14 +10,14 @@
 
 ## 1. Cobertura del temario oficial
 
-- [ ] **Usabilidad y diseño universal**: principios de usabilidad y experiencia de usuario, fundamentos del diseño universal y diseño para todos, modelos de calidad ISO 9241 e ISO/IEC 25010 — §1.1
-- [ ] **Acceso y usabilidad de las tecnologías de la sociedad de la información**: WCAG, requisitos TIC y EN 301 549, marco normativo en la Administración Pública, evaluación/auditoría/declaración — §1.2
-- [ ] **Seguridad en el puesto de usuario final**: preservación de la confidencialidad y garantía de la disponibilidad — §2.1
-- [ ] **Control de acceso y protección criptográfica**: autenticación y mínimo privilegio, cifrado de almacenamiento local y comunicaciones — §2.2
-- [ ] **Seguridad operativa y prevención de pérdida de datos**: código malicioso en el endpoint, copias de seguridad y DLP, ENS en el puesto — §2.3
-- [ ] **Ciclo de vida de desarrollo seguro**: modelos e integración, análisis de requisitos y modelado de amenazas — §3.1
-- [ ] **Principios y prácticas de codificación segura**: diseño seguro y defensa en profundidad, validación y sanitización, sesiones/autenticación/autorización (con los dos apartados de cuarto nivel del esqueleto), registro y excepciones — §3.2
-- [ ] **Vulnerabilidades y verificación**: catálogo OWASP, técnicas estáticas y dinámicas, bastionado y gestión de dependencias — §3.3
+- [ ] **Usabilidad y diseño universal**: principios de usabilidad y experiencia de usuario, fundamentos del diseño universal y diseño para todos, modelos de calidad ISO 9241 e ISO/IEC 25010 — §1
+- [ ] **Acceso y usabilidad de las tecnologías de la sociedad de la información**: WCAG, requisitos TIC y EN 301 549, marco normativo en la Administración Pública, evaluación/auditoría/declaración — §2
+- [ ] **Seguridad en el puesto de usuario final**: preservación de la confidencialidad y garantía de la disponibilidad — §3.1
+- [ ] **Control de acceso y protección criptográfica**: autenticación y mínimo privilegio, cifrado de almacenamiento local y comunicaciones — §3.2
+- [ ] **Seguridad operativa y prevención de pérdida de datos**: código malicioso en el endpoint, copias de seguridad y DLP, ENS en el puesto — §3.3
+- [ ] **Ciclo de vida de desarrollo seguro**: modelos e integración, análisis de requisitos y modelado de amenazas — §4.1
+- [ ] **Principios y prácticas de codificación segura**: diseño seguro y defensa en profundidad, validación y sanitización, sesiones/autenticación/autorización (con los dos apartados de cuarto nivel del esqueleto), registro y excepciones — §4.2
+- [ ] **Vulnerabilidades y verificación**: catálogo OWASP, técnicas estáticas y dinámicas, bastionado y gestión de dependencias — §4.3
 
 ## 2. Contenido teórico
 
@@ -72,7 +72,7 @@
 - [ ] Coherencia de versión (v1.0) en title, badges, banner y footer del `index.html`
 - [ ] El `index.html` abre, navega entre las 8 pestañas y el motor de test funciona
 - [ ] Las listas anidadas del Contenido se muestran con sus niveles (sin aplanar)
-- [ ] El **quinto nivel de encabezado** (§3.2.3.1 y §3.2.3.2, exigido por el esqueleto oficial) se renderiza con estilo propio y diferenciado del cuarto
+- [ ] El **quinto nivel de encabezado** (§4.2.3.1 y §4.2.3.2, exigido por el esqueleto oficial) se renderiza con estilo propio y diferenciado del cuarto
 - [ ] Los bloques de código Java, Python, JavaScript, SQL y HTTP se muestran correctamente formateados, sin markdown crudo
 
 ---

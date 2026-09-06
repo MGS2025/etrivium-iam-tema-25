@@ -30,7 +30,7 @@ C) Corrección, completitud y pertinencia funcional
 
 **Correcta: A) Eficacia, eficiencia y satisfacción en un contexto de uso específico** Los tres atributos van siempre acompañados de la referencia al contexto de uso: la usabilidad no es una propiedad absoluta del producto.
 
-*Referencia: §1.1.1 [ISO9241-11]*
+*Referencia: §1.1 [ISO9241-11]*
 </details>
 
 ---
@@ -47,7 +47,7 @@ C) La usabilidad es exigible por el RD 1112/2018 y la accesibilidad solo se reco
 
 **Correcta: B) La accesibilidad es una condición de partida exigible por ley; la usabilidad es un grado de calidad de uso no exigible con carácter general** Un sitio puede cumplir WCAG AA y ser poco usable, y viceversa. Lo que el RD 1112/2018 impone es la accesibilidad, no la usabilidad.
 
-*Referencia: §1.1 [RD1112-2018] [ISO9241-11]*
+*Referencia: §1 [RD1112-2018] [ISO9241-11]*
 </details>
 
 ---
@@ -64,7 +64,7 @@ C) En la mayor medida posible, sin necesidad de adaptación ni diseño especiali
 
 **Correcta: C) En la mayor medida posible, sin necesidad de adaptación ni diseño especializado** Es la definición literal del artículo 2 de la Convención, recogida también por el RDL 1/2013 con la denominación «diseño para todas las personas».
 
-*Referencia: §1.1.2 [CDPD] [TRLGDPD]*
+*Referencia: §1.2 [CDPD] [TRLGDPD]*
 </details>
 
 ---
@@ -81,7 +81,7 @@ C) Son obligatorios con independencia de que impongan una carga desproporcionada
 
 **Correcta: B) Son medidas individualizadas y subsidiarias, que se aplican cuando el diseño universal no resuelve la situación de una persona concreta** La secuencia correcta es diseño universal, tecnología de apoyo compatible y, solo entonces, ajuste razonable; y estos no pueden imponer una carga desproporcionada.
 
-*Referencia: §1.1.2 [TRLGDPD] [CDPD]*
+*Referencia: §1.2 [TRLGDPD] [CDPD]*
 </details>
 
 ---
@@ -98,7 +98,7 @@ C) Diez principios, entre ellos la visibilidad del estado del sistema
 
 **Correcta: A) Siete principios, entre ellos la tolerancia al error** Los cuatro principios (POUR) corresponden a WCAG y las diez heurísticas a Nielsen; los siete principios del diseño universal son de Ronald L. Mace y su equipo.
 
-*Referencia: §1.1.2 [CUD]*
+*Referencia: §1.2 [CUD]*
 </details>
 
 ---
@@ -115,7 +115,7 @@ C) Una subcaracterística de la usabilidad
 
 **Correcta: C) Una subcaracterística de la usabilidad** En el mismo modelo, la disponibilidad es subcaracterística de la fiabilidad y la confidencialidad lo es de la seguridad: las tres piezas que dan título a este tema están en tres características distintas.
 
-*Referencia: §1.1.3 [ISO25010]*
+*Referencia: §1.3 [ISO25010]*
 </details>
 
 ---
@@ -132,7 +132,7 @@ C) ISO 9241 es una norma de ergonomía centrada en el proceso y la interacción;
 
 **Correcta: C) ISO 9241 es una norma de ergonomía centrada en el proceso y la interacción; SQuaRE mide la calidad del producto software** La usabilidad aparece en ambas familias, pero con perspectivas distintas: como resultado del contexto de uso en ISO 9241-11 y como característica medible del producto en ISO/IEC 25010.
 
-*Referencia: §1.1.3 [ISO9241-11] [ISO25000]*
+*Referencia: §1.3 [ISO9241-11] [ISO25000]*
 </details>
 
 ---
@@ -149,7 +149,7 @@ C) Automatizado mediante herramientas de análisis de la interfaz
 
 **Correcta: A) Iterativo y con evaluación frente a los requisitos realizada con usuarios reales** Sus cuatro actividades son comprender el contexto de uso, especificar requisitos, producir soluciones de diseño y evaluar frente a los requisitos, repitiendo el ciclo.
 
-*Referencia: §1.1.1 [ISO9241-210]*
+*Referencia: §1.1 [ISO9241-210]*
 </details>
 
 ---
@@ -166,7 +166,7 @@ C) Diseño estético y minimalista
 
 **Correcta: B) Ayuda a reconocer, diagnosticar y recuperarse de los errores** Los mensajes deben expresarse en lenguaje llano e indicar qué ha ocurrido y qué debe hacer la persona, no un código interno sin explicación.
 
-*Referencia: §1.1.1 [NIELSEN]*
+*Referencia: §1.1 [NIELSEN]*
 </details>
 
 ---
@@ -183,7 +183,7 @@ C) La prueba A/B en producción
 
 **Correcta: A) La evaluación heurística** Es una inspección realizada por personas expertas contra un catálogo de heurísticas; las otras dos requieren usuarios reales interactuando con el sistema.
 
-*Referencia: §1.1.1 [NIELSEN] [ISO9241-210]*
+*Referencia: §1.1 [NIELSEN] [ISO9241-210]*
 </details>
 
 ---
@@ -200,7 +200,7 @@ C) Perceptible, Operable, Comprensible y Robusto
 
 **Correcta: C) Perceptible, Operable, Comprensible y Robusto** De ellos cuelgan las 13 pautas y, de estas, los criterios de conformidad, que son lo único verificable y normativo.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -217,7 +217,7 @@ C) Las técnicas suficientes documentadas por el W3C
 
 **Correcta: B) Únicamente los criterios de conformidad** Las pautas son objetivos generales y las técnicas son documentación informativa: se puede cumplir un criterio con una técnica no listada, siempre que sea comprobable.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -234,7 +234,7 @@ C) Nivel AAA
 
 **Correcta: A) Nivel AA** Lo impone el RD 1112/2018 por remisión a la norma UNE-EN 301 549. El propio W3C desaconseja exigir el nivel AAA para sitios completos porque no es alcanzable para todo tipo de contenido.
 
-*Referencia: §1.2.1 [RD1112-2018] [WCAG22]*
+*Referencia: §2.1 [RD1112-2018] [WCAG22]*
 </details>
 
 ---
@@ -251,7 +251,7 @@ C) Es Recomendación del W3C desde octubre de 2023, añade nueve criterios y ret
 
 **Correcta: C) Es Recomendación del W3C desde octubre de 2023, añade nueve criterios y retira el criterio 4.1.1 «Análisis sintáctico»** La norma ISO/IEC 40500:2012 corresponde a WCAG 2.0, no a la 2.2.
 
-*Referencia: §1.2.1 [WCAG22] [WCAG20]*
+*Referencia: §2.1 [WCAG22] [WCAG20]*
 </details>
 
 ---
@@ -268,7 +268,7 @@ C) 7:1 para el texto normal y 4,5:1 para el texto grande
 
 **Correcta: B) 4,5:1 para el texto normal y 3:1 para el texto grande** Los valores 7:1 y 4,5:1 corresponden al criterio 1.4.6 «Contraste (mejorado)», que es de nivel AAA.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -285,7 +285,7 @@ C) 4.1.2 Nombre, función, valor
 
 **Correcta: A) 1.4.1 Uso del color** El color no puede ser el único medio visual para transmitir información: hace falta además un texto, un símbolo o una etiqueta.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -302,7 +302,7 @@ C) Exige que la contraseña tenga una longitud mínima de doce caracteres
 
 **Correcta: B) Prohíbe exigir una prueba de función cognitiva sin ofrecer un método alternativo, y obliga a permitir pegar en los campos de contraseña** Recordar una contraseña, transcribir caracteres o resolver un rompecabezas son pruebas cognitivas que deben tener alternativa accesible.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -319,7 +319,7 @@ C) La conformidad se predica de páginas completas y de procesos completos
 
 **Correcta: C) La conformidad se predica de páginas completas y de procesos completos** Si un solo paso de la solicitud de cita no es conforme, no lo es todo el proceso.
 
-*Referencia: §1.2.1 [WCAG22]*
+*Referencia: §2.1 [WCAG22]*
 </details>
 
 ---
@@ -336,7 +336,7 @@ C) Son normas independientes y sin relación: WCAG se aplica a la web y la EN 30
 
 **Correcta: A) La EN 301 549 incorpora los criterios A y AA de WCAG en su capítulo sobre web y añade requisitos que WCAG no cubre** Sus capítulos añaden hardware, comunicación bidireccional, documentos no web, software, documentación y servicios de apoyo, que quedan fuera del alcance de WCAG.
 
-*Referencia: §1.2.2 [EN301549] [WCAG22]*
+*Referencia: §2.2 [EN301549] [WCAG22]*
 </details>
 
 ---
@@ -353,7 +353,7 @@ C) La conformidad con los capítulos aplicables de la EN 301 549, entre ellos el
 
 **Correcta: C) La conformidad con los capítulos aplicables de la EN 301 549, entre ellos el de hardware** WCAG cubre el contenido web; para hardware, telefonía, documentos y software es la norma europea la que fija los requisitos, y es además la referencia de la contratación pública.
 
-*Referencia: §1.2.2 [EN301549]*
+*Referencia: §2.2 [EN301549]*
 </details>
 
 ---
@@ -370,7 +370,7 @@ C) Puede aplicarse de forma genérica a todo el sitio web sin justificación ind
 
 **Correcta: B) Debe ser motivada, declararse expresamente y acompañarse de una alternativa accesible, y no puede fundarse en falta de prioridad, tiempo o conocimientos** La valoración atiende al tamaño, los recursos y la naturaleza del organismo frente al beneficio estimado para las personas con discapacidad.
 
-*Referencia: §1.2.3 [RD1112-2018]*
+*Referencia: §2.3 [RD1112-2018]*
 </details>
 
 ---
@@ -387,7 +387,7 @@ C) Conforme, en revisión o exento
 
 **Correcta: A) Plenamente conforme, parcialmente conforme o no conforme** El modelo lo fija la Decisión de Ejecución (UE) 2018/1523, y la declaración debe recoger además el contenido no accesible, la fecha y el método de evaluación y el mecanismo de comunicación y reclamación.
 
-*Referencia: §1.2.4 [DEC2018-1523] [RD1112-2018]*
+*Referencia: §2.4 [DEC2018-1523] [RD1112-2018]*
 </details>
 
 ---
@@ -404,7 +404,7 @@ C) Detectan solo una parte de los criterios, por lo que deben combinarse con rev
 
 **Correcta: C) Detectan solo una parte de los criterios, por lo que deben combinarse con revisión manual experta y con tecnologías de apoyo** Una herramienta detecta que falta el atributo `alt`, pero no que su contenido sea «imagen1.jpg»: una web puede superar el 100 % de las pruebas automáticas y ser inaccesible.
 
-*Referencia: §1.2.4 [WCAG-EM] [OBSERVATORIO]*
+*Referencia: §2.4 [WCAG-EM] [OBSERVATORIO]*
 </details>
 
 ---
@@ -421,7 +421,7 @@ C) Prevención, detección, respuesta, conservación y recuperación
 
 **Correcta: B) Disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad** Las tres primeras forman la triada clásica; autenticidad y trazabilidad son la aportación característica del esquema español.
 
-*Referencia: §2.1 [ENS]*
+*Referencia: §3.1 [ENS]*
 </details>
 
 ---
@@ -438,7 +438,7 @@ C) La integridad de las copias de seguridad
 
 **Correcta: A) La trazabilidad, porque ninguna actuación resulta imputable a una persona concreta** Por eso el ENS exige cuentas nominativas y proscribe las genéricas salvo justificación excepcional.
 
-*Referencia: §2.2.1 [ENS]*
+*Referencia: §3.2.1 [ENS]*
 </details>
 
 ---
@@ -455,7 +455,7 @@ C) Física y organizativa, orientada a evitar la exposición no autorizada de in
 
 **Correcta: C) Física y organizativa, orientada a evitar la exposición no autorizada de información en el entorno del puesto** Se complementa con el bloqueo de sesión, los filtros de privacidad, la impresión segura y la destrucción segura de documentos.
 
-*Referencia: §2.1.1 [ISO27002] [ENS]*
+*Referencia: §3.1.1 [ISO27002] [ENS]*
 </details>
 
 ---
@@ -472,7 +472,7 @@ C) Borrar las carpetas del usuario y vaciar la papelera de reciclaje
 
 **Correcta: B) Aplicar un procedimiento de borrado seguro o de destrucción del soporte conforme a las categorías de saneamiento reconocidas** Formatear no es borrar: la información sigue siendo recuperable, y en unidades de estado sólido el borrado exige órdenes específicas del dispositivo o el cifrado previo del soporte.
 
-*Referencia: §2.1.1 [NIST-800-88]*
+*Referencia: §3.1.1 [NIST-800-88]*
 </details>
 
 ---
@@ -489,7 +489,7 @@ C) Es indiferente dónde resida, siempre que el disco esté cifrado
 
 **Correcta: A) El puesto no debe albergar información única: el dato de trabajo debe residir en el repositorio corporativo** Esta regla resuelve a la vez la disponibilidad, el control de acceso y el cumplimiento documental: el disco local es caché de trabajo, no archivo.
 
-*Referencia: §2.1.2 [ENS]*
+*Referencia: §3.1.2 [ENS]*
 </details>
 
 ---
@@ -506,7 +506,7 @@ C) La cantidad máxima de información que se puede permitir perder, medida en t
 
 **Correcta: C) La cantidad máxima de información que se puede permitir perder, medida en tiempo hacia atrás desde el incidente** Determina la frecuencia de las copias; el tiempo de restablecimiento del servicio es el RTO, que mira hacia delante.
 
-*Referencia: §2.1.2 [ENS]*
+*Referencia: §3.1.2 [ENS]*
 </details>
 
 ---
@@ -523,7 +523,7 @@ C) 3,65 días de indisponibilidad al año
 
 **Correcta: B) 8,8 horas de indisponibilidad al año** El 99,99 % equivale a unos 53 minutos anuales y el 99 % a unos 3,65 días: cada nueve adicional divide aproximadamente por diez el tiempo admitido.
 
-*Referencia: §2.1.2 [ENS]*
+*Referencia: §3.1.2 [ENS]*
 </details>
 
 ---
@@ -540,7 +540,7 @@ C) Contraseña más repetición de la contraseña en un segundo campo
 
 **Correcta: A) Contraseña más código temporal generado por una aplicación en el móvil** La MFA exige dos factores de naturaleza distinta: aquí, algo que se sabe y algo que se tiene. La pregunta de seguridad es también conocimiento, por lo que no aporta un segundo factor.
 
-*Referencia: §2.2.1 [NIST-800-63B]*
+*Referencia: §3.2.1 [NIST-800-63B]*
 </details>
 
 ---
@@ -557,7 +557,7 @@ C) Que la credencial está ligada criptográficamente al dominio legítimo, por 
 
 **Correcta: C) Que la credencial está ligada criptográficamente al dominio legítimo, por lo que no puede entregarse a un sitio suplantado** Ni siquiera un usuario engañado puede entregarla a un sitio fraudulento; el SMS, en cambio, se considera un canal restringido por su exposición a la interceptación y al intercambio fraudulento de tarjeta SIM.
 
-*Referencia: §2.2.1 [WEBAUTHN] [NIST-800-63B]*
+*Referencia: §3.2.1 [WEBAUTHN] [NIST-800-63B]*
 </details>
 
 ---
@@ -574,7 +574,7 @@ C) Almacenar las contraseñas cifradas de forma reversible para poder recuperarl
 
 **Correcta: B) Favorecer la longitud sobre las reglas rígidas de complejidad y cambiar la contraseña cuando haya indicio de compromiso, no de forma periódica sistemática** La caducidad periódica obligatoria degrada la calidad de las contraseñas; y en el servidor solo debe guardarse el resumen con una función diseñada para ello y sal única por usuario, nunca cifrado reversible.
 
-*Referencia: §2.2.1 [NIST-800-63B] [OWASP-CHEAT]*
+*Referencia: §3.2.1 [NIST-800-63B] [OWASP-CHEAT]*
 </details>
 
 ---
@@ -591,7 +591,7 @@ C) Calcula la decisión de acceso en función de la hora y la ubicación de cada
 
 **Correcta: A) Asigna los permisos a roles y las personas a roles, lo que hace la autorización auditable y estable frente a la rotación de personal** La opción de que decida el propietario del recurso describe el modelo discrecional (DAC) y la decisión por atributos y contexto describe el modelo ABAC.
 
-*Referencia: §2.2.1 [ENS]*
+*Referencia: §3.2.1 [ENS]*
 </details>
 
 ---
@@ -608,7 +608,7 @@ C) El usuario no es administrador local de su equipo y las tareas administrativa
 
 **Correcta: C) El usuario no es administrador local de su equipo y las tareas administrativas se realizan con cuentas separadas y nominativas** Es la medida que más eficazmente limita el alcance del código malicioso y la instalación de software no autorizado, y se completa con la revisión periódica y la retirada inmediata de permisos al cese.
 
-*Referencia: §2.2.1 [SALTZER75] [ENS]*
+*Referencia: §3.2.1 [SALTZER75] [ENS]*
 </details>
 
 ---
@@ -625,7 +625,7 @@ C) Solo mientras el equipo permanece dentro de la red corporativa
 
 **Correcta: B) Cuando el equipo está apagado o el disco se extrae, pero no cuando la sesión está iniciada** Con el sistema en marcha, los ficheros se entregan descifrados a cualquier proceso autorizado: el cifrado complementa, pero no sustituye, al control de acceso y al bloqueo de sesión.
 
-*Referencia: §2.2.2 [NIST-800-111]*
+*Referencia: §3.2.2 [NIST-800-111]*
 </details>
 
 ---
@@ -642,7 +642,7 @@ C) El virus se inserta en otro programa o fichero anfitrión, mientras que el gu
 
 **Correcta: C) El virus se inserta en otro programa o fichero anfitrión, mientras que el gusano se propaga por sí mismo a través de la red** El cifrado de la información con exigencia de rescate caracteriza al ransomware, y el troyano se presenta como software legítimo sin replicarse.
 
-*Referencia: §2.3.1 [ATTACK]*
+*Referencia: §3.3.1 [ATTACK]*
 </details>
 
 ---
@@ -659,7 +659,7 @@ C) El filtro de contenidos del navegador
 
 **Correcta: A) El análisis de comportamiento en tiempo de ejecución, que detecta lo que el programa hace con independencia de su firma** La detección por firmas es ciega ante el código nuevo o polimórfico; y, en todo caso, lo único que garantiza la recuperación tras un cifrado consumado es la copia de seguridad aislada y verificada.
 
-*Referencia: §2.3.1 [ATTACK] [ENS]*
+*Referencia: §3.3.1 [ATTACK] [ENS]*
 </details>
 
 ---
@@ -676,7 +676,7 @@ C) Es equivalente a una instantánea del volumen
 
 **Correcta: B) Copia lo cambiado desde la última copia completa y se restaura con dos elementos: la completa y la última diferencial** La que se mide desde la última copia de cualquier tipo y exige toda la cadena es la incremental; y la instantánea no es una copia de seguridad, porque depende del mismo almacenamiento.
 
-*Referencia: §2.3.2 [ISO27002]*
+*Referencia: §3.3.2 [ISO27002]*
 </details>
 
 ---
@@ -693,7 +693,7 @@ C) Al menos una copia inmutable o desconectada, y la verificación mediante prue
 
 **Correcta: C) Al menos una copia inmutable o desconectada, y la verificación mediante pruebas de restauración** Un atacante con privilegios busca primero cifrar o borrar las copias; y una copia que nunca se ha restaurado no es una copia, sino una hipótesis.
 
-*Referencia: §2.3.2 [ENS] [ISO27002]*
+*Referencia: §3.3.2 [ENS] [ISO27002]*
 </details>
 
 ---
@@ -710,7 +710,7 @@ C) La copia actúa sobre datos en tránsito y el DLP sobre datos en reposo exclu
 
 **Correcta: A) La copia protege frente a la pérdida de la información y el DLP frente a su salida no autorizada** El DLP clasifica la información, vigila los canales de salida (correo, web, extraíbles, impresión) y registra, avisa, cifra o bloquea la operación.
 
-*Referencia: §2.3.2 [ISO27002]*
+*Referencia: §3.3.2 [ISO27002]*
 </details>
 
 ---
@@ -727,7 +727,7 @@ C) La fija libremente el responsable del sistema en función del presupuesto dis
 
 **Correcta: B) Es la correspondiente al nivel más alto alcanzado en cualquiera de sus dimensiones de seguridad** El nivel (bajo, medio o alto) se predica de cada dimensión y la categoría (básica, media o alta) del sistema: una sola dimensión valorada en nivel alto convierte todo el sistema en categoría alta.
 
-*Referencia: §2.3.3 [ENS]*
+*Referencia: §3.3.3 [ENS]*
 </details>
 
 ---
@@ -744,7 +744,7 @@ C) La certificación obligatoria de todos los productos por el fabricante
 
 **Correcta: C) La certificación obligatoria de todos los productos por el fabricante** Los principios básicos son la seguridad como proceso integral, la gestión basada en riesgos, la prevención-detección-respuesta-conservación, la existencia de líneas de defensa, la vigilancia continua y reevaluación periódica y la diferenciación de responsabilidades.
 
-*Referencia: §2.3.3 [ENS]*
+*Referencia: §3.3.3 [ENS]*
 </details>
 
 ---
@@ -761,7 +761,7 @@ C) La responsabilidad de la seguridad se traslada al equipo de operaciones
 
 **Correcta: A) La seguridad se introduce lo antes posible en el ciclo, porque el coste de corregir un defecto crece con la fase en que se detecta** Ello no significa «solo al principio»: la seguridad es actividad de todas las fases, incluidas el despliegue, la operación y la retirada.
 
-*Referencia: §3.1.1 [NIST-SSDF] [MS-SDL]*
+*Referencia: §4.1.1 [NIST-SSDF] [MS-SDL]*
 </details>
 
 ---
@@ -778,7 +778,7 @@ C) SAMM es una norma ISO certificable y BSIMM una recomendación del NIST
 
 **Correcta: B) SAMM es un modelo prescriptivo de madurez y BSIMM es un modelo descriptivo construido observando programas reales** SAMM indica qué hacer y en qué orden madurar, con cinco funciones de negocio y tres niveles; BSIMM sirve para compararse con lo que hace el sector.
 
-*Referencia: §3.1.1 [OWASP-SAMM] [BSIMM]*
+*Referencia: §4.1.1 [OWASP-SAMM] [BSIMM]*
 </details>
 
 ---
@@ -795,7 +795,7 @@ C) ASVS, porque es un catálogo de requisitos verificables organizado en tres ni
 
 **Correcta: C) ASVS, porque es un catálogo de requisitos verificables organizado en tres niveles** El Top 10 es un documento de concienciación, no una norma de verificación; SAMM mide el proceso de la organización, no el producto entregado.
 
-*Referencia: §3.1.1 [OWASP-ASVS] [OWASP-TOP10]*
+*Referencia: §4.1.1 [OWASP-ASVS] [OWASP-TOP10]*
 </details>
 
 ---
@@ -812,7 +812,7 @@ C) No repudio
 
 **Correcta: A) Autorización** La autenticidad la niega la suplantación (Spoofing) y el no repudio lo niega el repudio (Repudiation); la manipulación niega la integridad, la revelación de información la confidencialidad y la denegación de servicio la disponibilidad.
 
-*Referencia: §3.1.2 [SHOSTACK]*
+*Referencia: §4.1.2 [SHOSTACK]*
 </details>
 
 ---
@@ -829,7 +829,7 @@ C) La realización de una evaluación de impacto en todos los tratamientos, sin 
 
 **Correcta: B) La protección de datos desde el diseño y por defecto, de modo que solo se traten los datos necesarios para cada finalidad sin intervención del usuario** La evaluación de impacto es una obligación del artículo 35, exigible cuando el tratamiento entrañe un alto riesgo; y el artículo 32 habla de medidas apropiadas al riesgo, sin imponer un algoritmo concreto.
 
-*Referencia: §3.1.2 [RGPD]*
+*Referencia: §4.1.2 [RGPD]*
 </details>
 
 ---
@@ -846,7 +846,7 @@ C) La seguridad no debe depender del secreto del diseño, sino del secreto de la
 
 **Correcta: C) La seguridad no debe depender del secreto del diseño, sino del secreto de la clave** Es la formulación clásica del rechazo a la seguridad por oscuridad; ocultar la versión del servidor es una medida higiénica menor, no un control de seguridad.
 
-*Referencia: §3.2.1 [SALTZER75]*
+*Referencia: §4.2.1 [SALTZER75]*
 </details>
 
 ---
@@ -863,7 +863,7 @@ C) La validación de datos se realice tanto en el cliente como en el servidor
 
 **Correcta: A) Cada acceso a cada objeto se verifique siempre, sin cachear la decisión de autorización tomada al iniciar sesión** El cortafuegos de aplicación es una capa adicional, no la mediación; y la doble validación es una buena práctica distinta, en la que la del cliente cumple una función de usabilidad, no de seguridad.
 
-*Referencia: §3.2.1 [SALTZER75]*
+*Referencia: §4.2.1 [SALTZER75]*
 </details>
 
 ---
@@ -880,7 +880,7 @@ C) Filtrar las comillas simples y la palabra «script» en todos los campos de e
 
 **Correcta: B) Validar siempre en el servidor, preferir la lista blanca a la lista negra y canonicalizar antes de validar** El atacante no usa el formulario, envía la petición directamente; y las listas negras siempre quedan incompletas frente a codificaciones alternativas del mismo valor.
 
-*Referencia: §3.2.2 [OWASP-CHEAT] [OWASP-PROACTIVE]*
+*Referencia: §4.2.2 [OWASP-CHEAT] [OWASP-PROACTIVE]*
 </details>
 
 ---
@@ -897,7 +897,7 @@ C) Emplear consultas parametrizadas (sentencias preparadas), de modo que los val
 
 **Correcta: C) Emplear consultas parametrizadas (sentencias preparadas), de modo que los valores nunca se interpreten como código** La consulta se compila con marcadores y los valores viajan aparte, sin poder alterar la estructura; el escapado manual es frágil y dependiente del motor.
 
-*Referencia: §3.2.2 [OWASP-CHEAT] [OWASP-TOP10]*
+*Referencia: §4.2.2 [OWASP-CHEAT] [OWASP-TOP10]*
 </details>
 
 ---
@@ -914,7 +914,7 @@ C) La carga nunca llega al servidor: el guion del cliente la toma de la URL o de
 
 **Correcta: A) La carga maliciosa se guarda en el servidor y afecta a todos los usuarios que visualizan el contenido** Las otras dos descripciones corresponden al XSS reflejado y al XSS basado en DOM respectivamente; el almacenado es el más grave por su alcance.
 
-*Referencia: §3.2.2 [OWASP-TOP10] [OWASP-CHEAT]*
+*Referencia: §4.2.2 [OWASP-TOP10] [OWASP-CHEAT]*
 </details>
 
 ---
@@ -931,7 +931,7 @@ C) OpenID Connect es la versión anterior de OAuth 2.0, ya en desuso
 
 **Correcta: B) OAuth 2.0 es un marco de autorización delegada y OpenID Connect es la capa de autenticación construida sobre él, que añade el token de identidad** Usar OAuth 2.0 «a secas» para autenticar usuarios es un error clásico de diseño.
 
-*Referencia: §3.2.3.1 [RFC6749]*
+*Referencia: §4.2.3.1 [RFC6749]*
 </details>
 
 ---
@@ -948,7 +948,7 @@ C) Pérdida de control de acceso con referencia directa a objeto insegura, categ
 
 **Correcta: C) Pérdida de control de acceso con referencia directa a objeto insegura, categoría A01** La corrección es comprobar en el servidor, en cada petición, que el expediente solicitado pertenece al usuario autenticado; usar identificadores no predecibles es una medida complementaria, nunca sustitutiva.
 
-*Referencia: §3.2.3.1 [OWASP-TOP10]*
+*Referencia: §4.2.3.1 [OWASP-TOP10]*
 </details>
 
 ---
@@ -965,7 +965,7 @@ C) La falsificación de peticiones del lado del servidor (SSRF)
 
 **Correcta: A) La fijación de sesión (session fixation)** En este ataque el adversario impone a la víctima un identificador de sesión que él ya conoce; si el identificador se regenera al autenticarse, el conocido deja de ser válido.
 
-*Referencia: §3.2.3.2 [OWASP-ASVS]*
+*Referencia: §4.2.3.2 [OWASP-ASVS]*
 </details>
 
 ---
@@ -982,7 +982,7 @@ C) Evitar que la cookie se envíe en peticiones de origen cruzado
 
 **Correcta: B) Impedir que el código de guion del cliente pueda leerla, limitando el robo de sesión mediante XSS** Forzar HTTPS es la función del atributo `Secure` y evitar el envío en peticiones de origen cruzado es la del atributo `SameSite`, que mitiga el CSRF.
 
-*Referencia: §3.2.3.2 [OWASP-CHEAT]*
+*Referencia: §4.2.3.2 [OWASP-CHEAT]*
 </details>
 
 ---
@@ -999,7 +999,7 @@ C) Un JWT es autocontenido y no revocable por sí mismo, por lo que exige vidas 
 
 **Correcta: C) Un JWT es autocontenido y no revocable por sí mismo, por lo que exige vidas cortas y un mecanismo adicional de revocación** Además, el JWT va firmado pero no cifrado —su contenido es legible por quien lo posea— y el servidor debe fijar de antemano el algoritmo admitido y rechazar el algoritmo `none`.
 
-*Referencia: §3.2.3.2 [RFC7519] [RFC8725]*
+*Referencia: §4.2.3.2 [RFC7519] [RFC8725]*
 </details>
 
 ---
@@ -1016,7 +1016,7 @@ C) Los intentos fallidos de autenticación y los fallos de autorización
 
 **Correcta: B) Las contraseñas, los identificadores de sesión y los tokens de acceso** Tampoco deben registrarse claves criptográficas ni datos personales innecesarios: un registro indiscreto es una brecha de datos esperando ocurrir, y le son aplicables los principios de minimización y limitación del plazo de conservación.
 
-*Referencia: §3.2.4 [OWASP-CHEAT] [RGPD]*
+*Referencia: §4.2.4 [OWASP-CHEAT] [RGPD]*
 </details>
 
 ---
@@ -1033,5 +1033,5 @@ C) Las herramientas automáticas detectan de forma fiable los fallos de lógica 
 
 **Correcta: A) SAST analiza el código sin ejecutarlo, DAST ataca la aplicación en ejecución sin ver el código y SCA analiza las dependencias de terceros** Ninguna herramienta automática detecta los fallos de lógica de negocio ni de autorización: para eso hacen falta revisión manual de código y pruebas de penetración.
 
-*Referencia: §3.3.2 [OWASP-ASVS] [OWASP-TOP10]*
+*Referencia: §4.3.2 [OWASP-ASVS] [OWASP-TOP10]*
 </details>

@@ -9,44 +9,46 @@
 
 ## Estructura del tema
 
+> Las **cuatro secciones son las cuatro materias que enumera el título oficial**, en su mismo orden y con sus mismas palabras.
+
 1. **Accesibilidad, diseño universal y usabilidad**
-   1.1. Usabilidad y diseño universal
-   1.1.1. Principios de usabilidad y experiencia de usuario
-   1.1.2. Fundamentos del diseño universal y diseño para todos
-   1.1.3. Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
-   1.2. Acceso y usabilidad de las tecnologías, productos y servicios de la sociedad de la información
-   1.2.1. Pautas de accesibilidad al contenido web WCAG
-   1.2.2. Requisitos de accesibilidad TIC y norma EN 301 549
-   1.2.3. Marco normativo en la Administración Pública
-   1.2.4. Evaluación, auditoría y declaración de accesibilidad
+   1.1. Principios de usabilidad y experiencia de usuario
+   1.2. Fundamentos del diseño universal y diseño para todos
+   1.3. Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
 
-2. **Confidencialidad y disponibilidad de la información en puestos de usuario final**
-   2.1. Seguridad en el puesto de usuario final
-   2.1.1. Preservación de la confidencialidad en puestos de usuario final
-   2.1.2. Garantía de la disponibilidad de la información
-   2.2. Control de acceso y protección criptográfica
-   2.2.1. Autenticación de usuarios y principio de mínimo privilegio
-   2.2.2. Cifrado de almacenamiento local y comunicaciones
-   2.3. Seguridad operativa y prevención de pérdida de datos
-   2.3.1. Protección frente a código malicioso en el endpoint
-   2.3.2. Copias de seguridad y prevención de pérdida de datos
-   2.3.3. Esquema Nacional de Seguridad en el puesto de usuario final
+2. **Acceso y usabilidad de las tecnologías, productos y servicios de la sociedad de la información**
+   2.1. Pautas de accesibilidad al contenido web WCAG
+   2.2. Requisitos de accesibilidad TIC y norma EN 301 549
+   2.3. Marco normativo en la Administración Pública
+   2.4. Evaluación, auditoría y declaración de accesibilidad
 
-3. **Conceptos de seguridad en el desarrollo de los sistemas**
-   3.1. Ciclo de vida de desarrollo seguro
-   3.1.1. Modelos e integración de la seguridad en el desarrollo
-   3.1.2. Análisis de requisitos y modelado de amenazas
-   3.2. Principios y prácticas de codificación segura
-   3.2.1. Principios de diseño seguro y defensa en profundidad
-   3.2.2. Validación y sanitización de entradas y salidas
-   3.2.3. Gestión segura de sesiones, autenticación y autorización
-   3.2.4. Registro de auditoría y tratamiento de excepciones
-   3.3. Vulnerabilidades y verificación de la seguridad
-   3.3.1. Vulnerabilidades en el desarrollo de software y catálogo OWASP
-   3.3.2. Análisis de seguridad mediante técnicas estáticas y dinámicas
-   3.3.3. Bastionado de aplicaciones y gestión de dependencias
+3. **Confidencialidad y disponibilidad de la información en puestos de usuario final**
+   3.1. Seguridad en el puesto de usuario final
+   3.1.1. Preservación de la confidencialidad en puestos de usuario final
+   3.1.2. Garantía de la disponibilidad de la información
+   3.2. Control de acceso y protección criptográfica
+   3.2.1. Autenticación de usuarios y principio de mínimo privilegio
+   3.2.2. Cifrado de almacenamiento local y comunicaciones
+   3.3. Seguridad operativa y prevención de pérdida de datos
+   3.3.1. Protección frente a código malicioso en el endpoint
+   3.3.2. Copias de seguridad y prevención de pérdida de datos
+   3.3.3. Esquema Nacional de Seguridad en el puesto de usuario final
 
-*Dentro del epígrafe 3.2.3 el contenido desarrolla dos apartados de cuarto nivel previstos en el esqueleto oficial: 3.2.3.1 «Mecanismos de autenticación y control de acceso en aplicaciones» y 3.2.3.2 «Manejo seguro de tokens y control de sesiones».*
+4. **Conceptos de seguridad en el desarrollo de los sistemas**
+   4.1. Ciclo de vida de desarrollo seguro
+   4.1.1. Modelos e integración de la seguridad en el desarrollo
+   4.1.2. Análisis de requisitos y modelado de amenazas
+   4.2. Principios y prácticas de codificación segura
+   4.2.1. Principios de diseño seguro y defensa en profundidad
+   4.2.2. Validación y sanitización de entradas y salidas
+   4.2.3. Gestión segura de sesiones, autenticación y autorización
+   4.2.4. Registro de auditoría y tratamiento de excepciones
+   4.3. Vulnerabilidades y verificación de la seguridad
+   4.3.1. Vulnerabilidades en el desarrollo de software y catálogo OWASP
+   4.3.2. Análisis de seguridad mediante técnicas estáticas y dinámicas
+   4.3.3. Bastionado de aplicaciones y gestión de dependencias
+
+*Dentro del epígrafe 4.2.3 el contenido desarrolla dos apartados de cuarto nivel previstos en el esqueleto oficial: 4.2.3.1 «Mecanismos de autenticación y control de acceso en aplicaciones» y 4.2.3.2 «Manejo seguro de tokens y control de sesiones».*
 
 ---
 

@@ -26,15 +26,14 @@ Este tema incluye cuatro tipos de **cajas callout** para facilitar el estudio:
 
 Los ejemplos de **código** se escriben en lenguajes reales (Java, Python, JavaScript, SQL, HTML y configuración de servidor), no en pseudocódigo neutro, porque una parte del tema —la codificación segura— consiste precisamente en distinguir una construcción vulnerable de su equivalente correcta, y esa diferencia solo se aprecia en el lenguaje concreto. Los fragmentos son deliberadamente breves e ilustrativos. Las fuentes se citan con etiquetas breves tipo `[WCAG22]` o `[ENS]`; el registro completo está en `tema-25-fuentes.md`.
 
-**Caso de referencia usado en todo el tema** (contexto Ayuntamiento de Madrid, supuesto simplificado): el **servicio municipal de cita previa y consulta de expedientes**. Tiene dos caras. Por fuera, una **aplicación web pública** con la que cualquier vecino —incluidas personas mayores, con discapacidad visual, auditiva, motriz o cognitiva, y personas con baja competencia digital— pide cita en una Oficina de Atención a la Ciudadanía, consulta el estado de un expediente y descarga documentos. Por dentro, el **puesto de trabajo del empleado municipal** que atiende esa cita, gestiona el expediente y maneja datos personales de vecinos. Este supuesto encadena de forma natural los tres bloques del tema: el servicio público debe ser **accesible y usable** (bloque 1), el puesto desde el que se tramita debe preservar la **confidencialidad y la disponibilidad** de la información (bloque 2) y la aplicación que sostiene todo debe haberse **desarrollado de forma segura** (bloque 3).
+**Caso de referencia usado en todo el tema** (contexto Ayuntamiento de Madrid, supuesto simplificado): el **servicio municipal de cita previa y consulta de expedientes**. Tiene dos caras. Por fuera, una **aplicación web pública** con la que cualquier vecino —incluidas personas mayores, con discapacidad visual, auditiva, motriz o cognitiva, y personas con baja competencia digital— pide cita en una Oficina de Atención a la Ciudadanía, consulta el estado de un expediente y descarga documentos. Por dentro, el **puesto de trabajo del empleado municipal** que atiende esa cita, gestiona el expediente y maneja datos personales de vecinos. Este supuesto encadena de forma natural las cuatro materias del tema: el servicio público debe ser **accesible y usable** (§1 y §2), el puesto desde el que se tramita debe preservar la **confidencialidad y la disponibilidad** de la información (§3) y la aplicación que sostiene todo debe haberse **desarrollado de forma segura** (§4).
 
-> **[DATO CLAVE EXAMEN]** Los tres bloques del tema comparten un mismo hilo conductor: **la calidad de un sistema de información no es solo que funcione**. Un servicio público electrónico debe poder **usarlo cualquiera** (accesibilidad y usabilidad), debe **proteger la información** que maneja en el puesto donde se trabaja con ella (confidencialidad y disponibilidad) y debe haberse **construido pensando en el atacante** desde el primer día (desarrollo seguro). Las tres exigencias son, además, **obligaciones jurídicas** para el sector público español: RD 1112/2018, ENS (RD 311/2022) y RGPD (art. 25 y 32) respectivamente.
+> **[DATO CLAVE EXAMEN]** Las cuatro secciones del tema comparten un mismo hilo conductor: **la calidad de un sistema de información no es solo que funcione**. Un servicio público electrónico debe poder **usarlo cualquiera** (accesibilidad y usabilidad), debe **proteger la información** que maneja en el puesto donde se trabaja con ella (confidencialidad y disponibilidad) y debe haberse **construido pensando en el atacante** desde el primer día (desarrollo seguro). Las tres exigencias son, además, **obligaciones jurídicas** para el sector público español: RD 1112/2018, ENS (RD 311/2022) y RGPD (art. 25 y 32) respectivamente.
 
 ---
 
 ## 1. Accesibilidad, diseño universal y usabilidad
 
-### 1.1. Usabilidad y diseño universal
 
 Antes de entrar en normas y criterios conviene separar cuatro conceptos que en el lenguaje corriente se confunden y que en un examen se preguntan precisamente por su diferencia:
 
@@ -51,7 +50,7 @@ Existe además una figura jurídica complementaria: los **ajustes razonables**. 
 
 > **[EJEMPLO AYTO MADRID]** Aplicar **diseño universal** a la cita previa municipal es que el formulario funcione con teclado, con lector de pantalla, con texto ampliado al 200 % y con lenguaje claro **para todo el mundo desde el principio**. Un **ajuste razonable** sería habilitar una atención telefónica asistida para un vecino concreto cuya situación no queda cubierta pese a ello. Lo que **no** es admisible es la ruta inversa: publicar una sede inaccesible y ofrecer el teléfono como «alternativa», porque eso vulnera el derecho a relacionarse electrónicamente con la Administración en igualdad de condiciones `[LPACAP]` `[RD1112-2018]`.
 
-#### 1.1.1. Principios de usabilidad y experiencia de usuario
+### 1.1. Principios de usabilidad y experiencia de usuario
 
 La definición canónica de usabilidad es la de la norma **ISO 9241-11:2018**, que la descompone en tres atributos y la condiciona a un contexto `[ISO9241-11]`:
 
@@ -106,7 +105,7 @@ Los métodos de evaluación se agrupan en tres familias, complementarias y no su
 
 > **[EJERCICIO RESUELTO]** *Un vecino abandona la cita previa en el paso 3 de 5. La analítica muestra que el 62 % de los abandonos ocurren en la pantalla «Seleccione el tipo de trámite», que presenta una lista desplegable de 140 entradas con la denominación administrativa literal de cada procedimiento. ¿Qué principios se están incumpliendo y qué se corrige?* **Solución**: se incumplen la heurística 2 (correspondencia con el mundo real: el vecino no busca «Comunicación previa de inicio de actividad económica», busca «abrir un negocio»), la 6 (reconocer antes que recordar: 140 entradas exceden la capacidad de exploración) y la 8 (diseño minimalista). Correcciones: buscador con sugerencias sobre sinónimos en lenguaje corriente, agrupación por categorías vitales («vivienda», «vehículos», «negocio»), denominación doble (nombre común + denominación oficial como texto secundario) y trámites más frecuentes destacados. La medida de éxito es la tasa de finalización, no la opinión del área gestora.
 
-#### 1.1.2. Fundamentos del diseño universal y diseño para todos
+### 1.2. Fundamentos del diseño universal y diseño para todos
 
 El **diseño universal** nace en el ámbito de la arquitectura con **Ronald L. Mace** y el *Center for Universal Design* de la Universidad Estatal de Carolina del Norte, que en **1997** publica los **siete principios** que siguen siendo la referencia `[CUD]`:
 
@@ -128,7 +127,7 @@ En el ordenamiento español, la terminología está fijada por el **Real Decreto
 - **Diseño universal o diseño para todas las personas**: la actividad por la que se conciben o proyectan **desde el origen**, y siempre que ello sea posible, entornos, procesos, bienes, productos, servicios, objetos, instrumentos, dispositivos o herramientas de forma que **puedan ser utilizados por todas las personas**, en la mayor extensión posible, sin necesidad de adaptación ni de diseño especializado.
 - **Ajustes razonables**: modificaciones y adaptaciones necesarias y adecuadas del ambiente físico, social y actitudinal, **que no impongan una carga desproporcionada o indebida**, cuando se requieran en un caso particular de manera eficaz y práctica.
 
-Este vocabulario procede a su vez de la **Convención de la ONU sobre los derechos de las personas con discapacidad** (2006), ratificada por España, que define el diseño universal en su **artículo 2** y obliga a los Estados a asegurar el acceso a **los sistemas y las tecnologías de la información y las comunicaciones** en su **artículo 9** `[CDPD]`. Es el fundamento último de toda la cadena normativa que se estudia en §1.2.3: la accesibilidad digital no es una buena práctica técnica, es la **ejecución de un derecho**.
+Este vocabulario procede a su vez de la **Convención de la ONU sobre los derechos de las personas con discapacidad** (2006), ratificada por España, que define el diseño universal en su **artículo 2** y obliga a los Estados a asegurar el acceso a **los sistemas y las tecnologías de la información y las comunicaciones** en su **artículo 9** `[CDPD]`. Es el fundamento último de toda la cadena normativa que se estudia en §2.3: la accesibilidad digital no es una buena práctica técnica, es la **ejecución de un derecho**.
 
 Conviene también manejar el **modelo social de la discapacidad**, que sustenta esta normativa: la discapacidad no se entiende como un atributo del individuo, sino como el resultado de la **interacción entre una deficiencia y las barreras del entorno**. Una persona ciega no es incapaz de pedir una cita: es la **web sin texto alternativo** la que se lo impide. Reformular el problema así explica por qué la obligación recae sobre quien diseña, no sobre quien usa.
 
@@ -138,7 +137,7 @@ Las **tecnologías de apoyo** (o productos de apoyo) son el otro extremo de la r
 
 Un último concepto transversal: el **beneficio universal** (a veces llamado «efecto bordillo rebajado»). Las soluciones concebidas para personas con discapacidad benefician a toda la población: los subtítulos sirven a quien ve un vídeo en un espacio ruidoso o en un idioma que no domina; el contraste alto, a quien mira el móvil bajo el sol; el lenguaje claro, a cualquiera con prisa. Es el argumento decisivo frente a la objeción de coste: **la accesibilidad no es un extra para una minoría, es calidad para todos**.
 
-#### 1.1.3. Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
+### 1.3. Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
 
 Las normas que enmarcan este bloque pertenecen a dos familias distintas que conviene no confundir.
 
@@ -176,7 +175,7 @@ La familia SQuaRE distingue además tres modelos complementarios: **calidad del 
 
 > **[EJEMPLO AYTO MADRID]** En el pliego de contratación de la aplicación de cita previa, los requisitos de calidad se pueden redactar directamente sobre ISO/IEC 25010: *usabilidad* → tasa de finalización de la solicitud de cita ≥ 90 % en prueba con usuarios y conformidad **WCAG 2.2 AA** en la subcaracterística de accesibilidad; *fiabilidad* → disponibilidad del servicio ≥ 99,5 % mensual; *seguridad* → conformidad con el nivel de verificación aplicable de OWASP ASVS `[OWASP-ASVS]`. Expresar así los requisitos los hace **verificables en la recepción del contrato**, que es justo lo que un pliego necesita.
 
-### 1.2. Acceso y usabilidad de las tecnologías, productos y servicios de la sociedad de la información
+## 2. Acceso y usabilidad de las tecnologías, productos y servicios de la sociedad de la información
 
 La expresión «**servicios de la sociedad de la información**» procede del derecho comunitario y designa todo servicio prestado normalmente a título oneroso, **a distancia**, **por vía electrónica** y **a petición individual** del destinatario. En España la recoge la Ley 34/2002 (LSSI-CE). Trasladada al objeto de este tema, abarca el conjunto de canales por los que la ciudadanía se relaciona hoy con la Administración y con el mercado: **sitios web, sedes electrónicas, aplicaciones móviles, documentos electrónicos, cajeros y máquinas expendedoras de billetes, atención telefónica automatizada y terminales de autoservicio**.
 
@@ -187,7 +186,7 @@ El problema de acceso tiene dos capas superpuestas que no deben confundirse:
 
 > **[DATO CLAVE EXAMEN]** No confundir **brecha digital** (falta de medios o de competencias, se combate con asistencia, formación y despliegue) con **barrera de accesibilidad** (defecto de diseño del producto, se combate con normas técnicas exigibles). Un examen puede plantear un caso mezclando ambas: la respuesta correcta es que requieren **medidas de naturaleza distinta**.
 
-#### 1.2.1. Pautas de accesibilidad al contenido web WCAG
+### 2.1. Pautas de accesibilidad al contenido web WCAG
 
 Las **Web Content Accessibility Guidelines (WCAG)** son las recomendaciones del **W3C**, elaboradas por su iniciativa **WAI** (*Web Accessibility Initiative*), y constituyen la norma de referencia mundial de accesibilidad del contenido web `[WCAG22]` `[WAI]`.
 
@@ -245,7 +244,7 @@ Además de WCAG, el W3C mantiene dos recomendaciones hermanas que completan el t
 
 > **[EJERCICIO RESUELTO]** *En el formulario de cita previa, los campos obligatorios se marcan solo pintando su borde en rojo; el aviso «Debe indicar su NIF» aparece como un texto rojo insertado dinámicamente junto al campo sin recibir el foco; y el desplegable de distrito envía el formulario al seleccionar una opción. Identifique los criterios incumplidos.* **Solución**: (a) marcar lo obligatorio solo con color incumple **1.4.1 Uso del color** (nivel A) —hay que añadir un texto o un icono con alternativa textual—; (b) el mensaje insertado dinámicamente que no recibe foco incumple **4.1.3 Mensajes de estado** (AA) si no se anuncia mediante `role="alert"` o una región activa, y **3.3.1 Identificación de errores** (A) si no describe el error en texto; (c) enviar el formulario al cambiar el desplegable incumple **3.2.2 Al recibir entradas** (A), porque un cambio de configuración provoca por sí solo un cambio de contexto. Corrección: asterisco y texto «(obligatorio)», mensaje de error en región activa asociada al campo mediante `aria-describedby`, y botón explícito de envío.
 
-#### 1.2.2. Requisitos de accesibilidad TIC y norma EN 301 549
+### 2.2. Requisitos de accesibilidad TIC y norma EN 301 549
 
 WCAG cubre el **contenido web**, pero la accesibilidad exigible a un organismo público abarca mucho más: aplicaciones de escritorio, documentos ofimáticos, un teléfono de atención, un cajero automático de pago de tasas o el propio hardware del puesto. Ese espacio lo cubre la norma europea **EN 301 549** — *Requisitos de accesibilidad para productos y servicios TIC* — elaborada conjuntamente por **ETSI, CEN y CENELEC** a petición de la Comisión Europea `[EN301549]`.
 
@@ -272,7 +271,7 @@ La versión **v3.2.1 (2021)** es la citada como armonizada en el marco de la Dir
 
 > **[EJEMPLO AYTO MADRID]** Si el Ayuntamiento licita simultáneamente el rediseño de la web de cita previa, la aplicación móvil, la renovación de los **tótems de autoservicio** de las Oficinas de Atención a la Ciudadanía y el nuevo servicio de **atención telefónica**, el pliego no puede limitarse a exigir «WCAG 2.2 AA»: debe exigir **conformidad con la EN 301 549** en los capítulos aplicables a cada lote —9 para la web, 11 para la app, 8 para los tótems, 6 y 13 para la telefonía— y pedir el **informe de evaluación** correspondiente como documentación de entrega `[EN301549]`.
 
-#### 1.2.3. Marco normativo en la Administración Pública
+### 2.3. Marco normativo en la Administración Pública
 
 La cadena normativa que obliga a un ayuntamiento español tiene cinco eslabones y conviene memorizarla en orden:
 
@@ -289,7 +288,7 @@ La cadena normativa que obliga a un ayuntamiento español tiene cinco eslabones 
 - **Requisito técnico** (art. 4): conformidad con la **norma UNE-EN 301 549** en su versión vigente, lo que en la práctica supone el **nivel AA de WCAG** para la parte web.
 - **Excepciones tasadas** (art. 3.3): quedan fuera, entre otros, los contenidos de terceros que el organismo ni financia ni desarrolla ni controla; las retransmisiones **en directo** sujetas a límites temporales; los archivos ofimáticos publicados **antes del 23 de septiembre de 2018** que no sean necesarios para un trámite en curso; los mapas en línea (siempre que se dé alternativa accesible a la información esencial de navegación); y las reproducciones de piezas de patrimonio cuya accesibilidad sea incompatible con su conservación.
 - **Carga desproporcionada** (art. 7): puede alegarse **motivadamente**, valorando tamaño, recursos y naturaleza del organismo frente al beneficio estimado para las personas con discapacidad. **Nunca puede fundarse en la falta de prioridad, de tiempo o de conocimientos**, y obliga a ofrecer una **alternativa accesible** y a declararlo en la declaración de accesibilidad.
-- **Declaración de accesibilidad** (art. 15) y **unidad responsable de accesibilidad** (art. 16), que se desarrollan en §1.2.4.
+- **Declaración de accesibilidad** (art. 15) y **unidad responsable de accesibilidad** (art. 16), que se desarrollan en §2.4.
 - **Plazos de aplicación** (disposición transitoria): sitios web publicados **a partir del 20 de septiembre de 2018** → exigible desde el **23 de septiembre de 2019**; sitios anteriores → **23 de septiembre de 2020**; **aplicaciones móviles** → **23 de junio de 2021**. A día de hoy, por tanto, la exigencia es **plena para todo el sector público**.
 - **Revisión, seguimiento y régimen de quejas** (arts. 17 y siguientes), con informe periódico a la Comisión Europea conforme a la metodología de la **Decisión (UE) 2018/1524** `[DEC2018-1524]`.
 
@@ -299,7 +298,7 @@ Junto a esta cadena específica, otras normas concurren sobre el mismo objeto: l
 
 > **[REFERENCIA CRUZADA]** El **Tema 23** desarrolla las aplicaciones y el desarrollo web (HTML semántico, front-end multiplataforma y multidispositivo), sobre el que se apoyan técnicamente la mayor parte de los criterios WCAG; el **Tema 24** trata la accesibilidad en el desarrollo **móvil** (capítulo 11 de la EN 301 549); y el **Tema 39** desarrolla los Esquemas Nacionales de Seguridad e Interoperabilidad, con los que este marco se cruza en la sede electrónica.
 
-#### 1.2.4. Evaluación, auditoría y declaración de accesibilidad
+### 2.4. Evaluación, auditoría y declaración de accesibilidad
 
 **Metodología de evaluación.** El W3C publica **WCAG-EM 1.0** `[WCAG-EM]`, metodología de evaluación de la conformidad de un **sitio completo** en cinco pasos:
 
@@ -337,9 +336,9 @@ La declaración debe **revisarse periódicamente** (al menos con carácter anual
 
 ---
 
-## 2. Confidencialidad y disponibilidad de la información en puestos de usuario final
+## 3. Confidencialidad y disponibilidad de la información en puestos de usuario final
 
-### 2.1. Seguridad en el puesto de usuario final
+### 3.1. Seguridad en el puesto de usuario final
 
 Se llama **puesto de usuario final** (o *endpoint*) al conjunto formado por el **equipo** desde el que una persona trabaja con la información —ordenador de sobremesa, portátil, tableta, teléfono corporativo, cliente ligero o puesto virtualizado—, su **software**, su **configuración**, los **soportes** que se le conectan y el **entorno físico** en el que está. No es solo la máquina: es la máquina, lo que contiene, quien la usa y dónde está.
 
@@ -366,7 +365,7 @@ Las **amenazas típicas del puesto** se agrupan en cuatro familias:
 
 > **[EJEMPLO AYTO MADRID]** El puesto de la Oficina de Atención a la Ciudadanía concentra casi todas: atiende con **público delante de la pantalla** (espionaje visual), maneja **datos personales de vecinos** —incluidas, en algunos trámites, categorías especiales como los datos de salud de una solicitud de tarjeta de estacionamiento para personas con movilidad reducida—, recibe **correos externos** con documentación adjunta de la ciudadanía (vector de código malicioso) e imprime documentos en una impresora compartida del área. Cada una de esas condiciones exige un control distinto, y ninguno de ellos es un antivirus.
 
-#### 2.1.1. Preservación de la confidencialidad en puestos de usuario final
+#### 3.1.1. Preservación de la confidencialidad en puestos de usuario final
 
 La confidencialidad se protege combinando controles de **cuatro naturalezas** —organizativos, físicos, técnicos y de personas—, siguiendo la clasificación de **ISO/IEC 27002:2022** `[ISO27002]`. Ninguno basta por separado.
 
@@ -379,7 +378,7 @@ La confidencialidad se protege combinando controles de **cuatro naturalezas** �
 - **Impresión segura** (*pull printing*): el documento no sale hasta que la persona se identifica en la impresora; evita hojas con datos personales olvidadas en la bandeja.
 - **Destrucción segura** de papel (destructora de corte cruzado) y **borrado seguro de soportes** antes de reutilizar o retirar un equipo, conforme a las categorías *clear*, *purge* y *destroy* de **NIST SP 800-88** `[NIST-800-88]`. **Formatear no es borrar**: en un disco magnético la información sigue siendo recuperable, y en un SSD el borrado exige órdenes específicas del propio dispositivo o el cifrado previo del soporte (*crypto-erase*).
 
-**c) Controles técnicos** (se desarrollan en §2.2 y §2.3): control de acceso y mínimo privilegio, cifrado del disco y de los soportes extraíbles, cifrado del tráfico, control de puertos USB, prevención de fuga de datos (DLP), gestión centralizada de la configuración y del inventario, y protección frente a código malicioso.
+**c) Controles técnicos** (se desarrollan en §3.2 y §3.3): control de acceso y mínimo privilegio, cifrado del disco y de los soportes extraíbles, cifrado del tráfico, control de puertos USB, prevención de fuga de datos (DLP), gestión centralizada de la configuración y del inventario, y protección frente a código malicioso.
 
 **d) Controles sobre las personas:**
 - **Acuerdos de confidencialidad** y deber de secreto, que **subsiste tras finalizar la relación** de servicio.
@@ -393,7 +392,7 @@ La confidencialidad se protege combinando controles de **cuatro naturalezas** �
 
 > **[REFERENCIA CRUZADA]** La **seguridad en el puesto del usuario** desde la óptica de la **red** —seguridad perimetral, acceso remoto seguro y VPN— se desarrolla en el **Tema 36**; los conceptos generales de seguridad, criptografía y firma digital, en el **Tema 32**; y las **copias de seguridad** como sistema, con sus políticas y su virtualización, en el **Tema 26**. Este epígrafe se limita a la perspectiva del puesto.
 
-#### 2.1.2. Garantía de la disponibilidad de la información
+#### 3.1.2. Garantía de la disponibilidad de la información
 
 La disponibilidad en el puesto se juega sobre una decisión de arquitectura anterior a cualquier control: **dónde reside el dato**.
 
@@ -407,7 +406,7 @@ Esta regla resuelve simultáneamente tres problemas: disponibilidad (si el port�
 |---|---|
 | Avería de hardware (disco, fuente, placa) | Dato en repositorio corporativo; **puesto estandarizado y reinstalable** en poco tiempo desde imagen; stock de sustitución. |
 | Borrado o modificación accidental | Copias de seguridad con **versionado** e histórico; papelera de red con retención; permisos ajustados. |
-| **Ransomware** | Segmentación, mínimo privilegio, protección del *endpoint* y, sobre todo, **copias inmutables o desconectadas** verificadas (§2.3.2). |
+| **Ransomware** | Segmentación, mínimo privilegio, protección del *endpoint* y, sobre todo, **copias inmutables o desconectadas** verificadas (§3.3.2). |
 | Pérdida o robo del dispositivo | Dato no residente + cifrado del disco + borrado remoto. |
 | Corte de suministro eléctrico o de red | SAI en puestos críticos; conectividad alternativa; **modo de contingencia** documentado para la atención presencial. |
 | Software desactualizado o incompatible | Gestión centralizada de actualizaciones y de la configuración; ventanas de mantenimiento planificadas. |
@@ -424,9 +423,9 @@ Junto a ellas se manejan el **MTBF** (tiempo medio entre fallos, mide la fiabili
 
 > **[EJERCICIO RESUELTO]** *La Oficina de Atención a la Ciudadanía puede trabajar con un desfase máximo de dos horas en la información de citas y no puede estar más de 30 minutos sin poder atender. ¿Qué RPO y qué RTO se fijan, y qué implica cada uno?* **Solución**: **RPO = 2 horas** → la copia o la replicación de la base de datos de citas debe ejecutarse al menos cada dos horas; una copia nocturna sería insuficiente. **RTO = 30 minutos** → no basta con tener la copia: hace falta un procedimiento de restauración probado que quepa en media hora (sistema en alta disponibilidad o conmutación a un nodo secundario), más un **procedimiento manual de contingencia** —listado impreso de citas del día— que permita atender mientras se recupera el servicio. Obsérvese que el RTO, no el RPO, es el que obliga a invertir en infraestructura.
 
-### 2.2. Control de acceso y protección criptográfica
+### 3.2. Control de acceso y protección criptográfica
 
-#### 2.2.1. Autenticación de usuarios y principio de mínimo privilegio
+#### 3.2.1. Autenticación de usuarios y principio de mínimo privilegio
 
 El control de acceso se descompone en cuatro pasos que conviene no mezclar:
 
@@ -475,7 +474,7 @@ La **autenticación multifactor (MFA)** exige **dos o más factores de naturalez
 
 > **[EJEMPLO AYTO MADRID]** Una tramitadora de licencias no debe poder consultar el padrón completo, sino únicamente los datos de las personas afectadas por los expedientes que tiene asignados; y los accesos deben quedar registrados de forma nominativa, de modo que una consulta indebida —a los datos de un vecino conocido, por ejemplo— sea **detectable e imputable**. Esto es a la vez **mínimo privilegio + necesidad de conocer + trazabilidad**, y es exactamente lo que exige el principio de **minimización** del RGPD y la medida de control de acceso del ENS `[RGPD]` `[ENS]`.
 
-#### 2.2.2. Cifrado de almacenamiento local y comunicaciones
+#### 3.2.2. Cifrado de almacenamiento local y comunicaciones
 
 La criptografía es la última línea de defensa de la confidencialidad: **el control que sigue funcionando cuando todos los demás han fallado** y el soporte ha salido del perímetro.
 
@@ -502,11 +501,11 @@ Puntos críticos que se preguntan: el FDE protege frente al **robo del equipo ap
 
 > **[REFERENCIA CRUZADA]** Los fundamentos criptográficos —cifrado simétrico y asimétrico, funciones resumen, PKI, firma digital y sus mecanismos— se desarrollan en el **Tema 32**; los protocolos **HTTPS y SSL/TLS** en el **Tema 35**; y la seguridad perimetral, el acceso remoto y las **VPN** en el **Tema 36**. Aquí interesan solo en cuanto controles aplicados al puesto de usuario.
 
-> **[EJERCICIO RESUELTO]** *Un portátil municipal con expedientes descargados se sustrae del coche de un inspector. ¿Es una brecha de datos personales notificable?* **Solución**: hay que distinguir. Si el disco estaba **cifrado con FDE**, el equipo estaba **apagado** y la clave de cifrado no era accesible (custodiada por TPM y protegida por credencial robusta), el incidente afecta a la **disponibilidad** —el inspector ha perdido su herramienta— pero **no compromete la confidencialidad**, porque la información es ininteligible para el tercero; el RGPD `[RGPD]` prevé precisamente que en tal caso puede no ser necesaria la comunicación a los interesados, aunque el incidente **debe documentarse internamente** y valorarse la notificación a la autoridad de control. Si el disco **no** estaba cifrado, o el equipo se sustrajo **con la sesión iniciada**, hay compromiso de confidencialidad de datos personales y procede evaluar la notificación a la autoridad de control en **72 horas** y, si el riesgo para los derechos es alto, la comunicación a los afectados. Medidas posteriores en ambos casos: revocación de credenciales y certificados del equipo, **borrado remoto** si el MDM lo permite, y revisión de por qué había expedientes residiendo en local (§2.1.2).
+> **[EJERCICIO RESUELTO]** *Un portátil municipal con expedientes descargados se sustrae del coche de un inspector. ¿Es una brecha de datos personales notificable?* **Solución**: hay que distinguir. Si el disco estaba **cifrado con FDE**, el equipo estaba **apagado** y la clave de cifrado no era accesible (custodiada por TPM y protegida por credencial robusta), el incidente afecta a la **disponibilidad** —el inspector ha perdido su herramienta— pero **no compromete la confidencialidad**, porque la información es ininteligible para el tercero; el RGPD `[RGPD]` prevé precisamente que en tal caso puede no ser necesaria la comunicación a los interesados, aunque el incidente **debe documentarse internamente** y valorarse la notificación a la autoridad de control. Si el disco **no** estaba cifrado, o el equipo se sustrajo **con la sesión iniciada**, hay compromiso de confidencialidad de datos personales y procede evaluar la notificación a la autoridad de control en **72 horas** y, si el riesgo para los derechos es alto, la comunicación a los afectados. Medidas posteriores en ambos casos: revocación de credenciales y certificados del equipo, **borrado remoto** si el MDM lo permite, y revisión de por qué había expedientes residiendo en local (§3.1.2).
 
-### 2.3. Seguridad operativa y prevención de pérdida de datos
+### 3.3. Seguridad operativa y prevención de pérdida de datos
 
-#### 2.3.1. Protección frente a código malicioso en el endpoint
+#### 3.3.1. Protección frente a código malicioso en el endpoint
 
 Se denomina **código dañino** o **malware** a todo programa diseñado para ejecutar acciones no autorizadas en un sistema. Las familias que hay que saber distinguir:
 
@@ -535,17 +534,17 @@ Se denomina **código dañino** o **malware** a todo programa diseñado para eje
 **Medidas complementarias, tanto o más importantes que el producto:**
 
 1. **Actualización y gestión de parches**: sistema operativo, navegador, ofimática, lectores de PDF, complementos y firmware, con un ciclo definido y priorización por criticidad (**CVSS** `[CVSS]`) y por explotación activa conocida.
-2. **Mínimo privilegio** (§2.2.1): sin administrador local, la mayoría del código malicioso ve muy reducido su alcance.
+2. **Mínimo privilegio** (§3.2.1): sin administrador local, la mayoría del código malicioso ve muy reducido su alcance.
 3. **Control de aplicaciones** (listas de permitidos) y **bloqueo de macros** procedentes de Internet.
 4. **Filtrado en el correo y en la navegación**: análisis de adjuntos, reescritura de enlaces, bloqueo de categorías y de dominios recién registrados.
 5. **Segmentación de red**: impide que un puesto comprometido alcance directamente servidores o el resto de puestos (movimiento lateral).
-6. **Copias de seguridad** verificadas y aisladas (§2.3.2): la **única** medida que garantiza recuperación frente a un cifrado consumado.
+6. **Copias de seguridad** verificadas y aisladas (§3.3.2): la **única** medida que garantiza recuperación frente a un cifrado consumado.
 7. **Formación**: la mayoría de las intrusiones empiezan por una acción humana inducida.
 8. **Plan de respuesta a incidentes** ensayado: aislar, contener, erradicar, recuperar y aprender, con los cauces de notificación —**CCN-CERT** en el sector público `[CCN-STIC]`, autoridad de protección de datos si hay datos personales— identificados de antemano.
 
 > **[DATO CLAVE EXAMEN]** Frente al **ransomware**, la protección del *endpoint* reduce la probabilidad, pero **lo único que garantiza la recuperación es la copia de seguridad**, siempre que esté **fuera del alcance del atacante** (desconectada o inmutable) y **se haya probado su restauración**. Y como el ransomware moderno practica **doble extorsión** —cifra y además exfiltra—, tener copias **no exime** de tratar el incidente como una posible **brecha de datos personales** notificable `[RGPD]`.
 
-#### 2.3.2. Copias de seguridad y prevención de pérdida de datos
+#### 3.3.2. Copias de seguridad y prevención de pérdida de datos
 
 **Tipos de copia:**
 
@@ -561,7 +560,7 @@ Se denomina **código dañino** o **malware** a todo programa diseñado para eje
 
 **La regla 3-2-1 y su refuerzo.** La práctica de referencia establece mantener **3** copias de los datos (la original más dos), en **2** tipos de soporte distintos, con **1** de ellas **fuera de las instalaciones**. Frente al ransomware se refuerza con **1 copia inmutable o desconectada** (*air-gapped*, WORM) y **0 errores tras verificación**, porque un atacante con privilegios buscará primero **cifrar o borrar las copias**.
 
-**Requisitos de una política de copias completa**: alcance (qué se copia y qué no), **RPO y RTO** por tipo de información (§2.1.2), frecuencia y ventana de ejecución, **retención** (cuánto tiempo se guarda cada copia, con esquemas de generaciones diario/semanal/mensual/anual), ubicación, **cifrado de la copia** —una copia sin cifrar es una fuga de datos empaquetada—, control de acceso propio y separado del de producción, monitorización de los trabajos y, sobre todo, **pruebas periódicas de restauración documentadas**.
+**Requisitos de una política de copias completa**: alcance (qué se copia y qué no), **RPO y RTO** por tipo de información (§3.1.2), frecuencia y ventana de ejecución, **retención** (cuánto tiempo se guarda cada copia, con esquemas de generaciones diario/semanal/mensual/anual), ubicación, **cifrado de la copia** —una copia sin cifrar es una fuga de datos empaquetada—, control de acceso propio y separado del de producción, monitorización de los trabajos y, sobre todo, **pruebas periódicas de restauración documentadas**.
 
 > **[DATO CLAVE EXAMEN]** **Una copia que no se ha restaurado nunca no es una copia de seguridad: es una hipótesis.** La prueba periódica de restauración es un requisito expreso de las buenas prácticas y del ENS, y el fallo más común en organizaciones que creen estar protegidas `[ENS]` `[ISO27002]`.
 
@@ -577,9 +576,9 @@ Se despliega en tres puntos: **en el puesto** (agente), **en la red** (inspecci�
 
 > **[EJEMPLO AYTO MADRID]** Un empleado intenta enviar a su correo personal una hoja de cálculo con 2.400 registros del padrón «para seguir trabajando en casa». El DLP detecta el patrón de NIF repetido, **bloquea el envío**, informa al usuario del motivo y registra el intento. El incidente se resuelve con formación y con la habilitación de un acceso remoto adecuado —que es la causa real del comportamiento—, no solo con la sanción: **un control que impide trabajar sin ofrecer alternativa se acaba eludiendo**, que es justo lo que advierte el principio de **aceptabilidad psicológica** de Saltzer y Schroeder `[SALTZER75]`.
 
-#### 2.3.3. Esquema Nacional de Seguridad en el puesto de usuario final
+#### 3.3.3. Esquema Nacional de Seguridad en el puesto de usuario final
 
-El **Esquema Nacional de Seguridad**, regulado por el **Real Decreto 311/2022** `[ENS]`, es el marco obligatorio de seguridad para el sector público español y para las entidades privadas que le prestan servicios. Su finalidad es crear las condiciones de confianza en el uso de los medios electrónicos mediante medidas que garanticen las **cinco dimensiones** (§2.1).
+El **Esquema Nacional de Seguridad**, regulado por el **Real Decreto 311/2022** `[ENS]`, es el marco obligatorio de seguridad para el sector público español y para las entidades privadas que le prestan servicios. Su finalidad es crear las condiciones de confianza en el uso de los medios electrónicos mediante medidas que garanticen las **cinco dimensiones** (§3.1).
 
 **Los principios básicos** que lo informan son: la **seguridad como proceso integral** (personas, procesos y tecnología, no solo productos); la **gestión de la seguridad basada en los riesgos**; la **prevención, detección, respuesta y conservación**; la **existencia de líneas de defensa** (defensa en profundidad); la **vigilancia continua y reevaluación periódica**; y la **diferenciación de responsabilidades** entre el responsable de la información, el del servicio, el de la seguridad y el del sistema.
 
@@ -610,11 +609,11 @@ Cada medida se aplica con **exigencia creciente** según la categoría del siste
 
 ---
 
-## 3. Conceptos de seguridad en el desarrollo de los sistemas
+## 4. Conceptos de seguridad en el desarrollo de los sistemas
 
-### 3.1. Ciclo de vida de desarrollo seguro
+### 4.1. Ciclo de vida de desarrollo seguro
 
-#### 3.1.1. Modelos e integración de la seguridad en el desarrollo
+#### 4.1.1. Modelos e integración de la seguridad en el desarrollo
 
 Durante décadas la seguridad del software se trató como una **fase final**: se construía la aplicación y, antes de ponerla en producción, se le hacía una auditoría o se colocaba delante un cortafuegos. Ese modelo fracasa por dos razones: los defectos de **diseño** no se pueden parchear desde fuera, y el coste de corregir crece de forma acusada con la fase en que se detecta el defecto —de un cambio de una línea en la especificación se pasa a un rediseño, una migración de datos y una ventana de parada en producción.
 
@@ -623,7 +622,7 @@ El **ciclo de vida de desarrollo seguro** (**SSDLC**, *Secure Software Developme
 | Fase del ciclo de vida | Actividades de seguridad |
 |---|---|
 | **Requisitos** | Requisitos de seguridad explícitos y verificables (a partir de **ASVS** `[OWASP-ASVS]`, del ENS y del RGPD); clasificación de los datos que se tratarán; requisitos legales de accesibilidad y de protección de datos. |
-| **Diseño / arquitectura** | **Modelado de amenazas** (§3.1.2); aplicación de los principios de diseño seguro (§3.2.1); definición de la superficie de ataque, de los límites de confianza y del modelo de autorización; **privacidad desde el diseño** `[RGPD]`. |
+| **Diseño / arquitectura** | **Modelado de amenazas** (§4.1.2); aplicación de los principios de diseño seguro (§4.2.1); definición de la superficie de ataque, de los límites de confianza y del modelo de autorización; **privacidad desde el diseño** `[RGPD]`. |
 | **Implementación** | Estándares de **codificación segura**; bibliotecas y marcos aprobados; revisión de código entre pares con lista de comprobación de seguridad; análisis estático (**SAST**) en el propio entorno de desarrollo. |
 | **Verificación / pruebas** | **DAST**, análisis de composición (**SCA**), *fuzzing*, pruebas de casos de abuso, **prueba de penetración** antes de la puesta en producción. |
 | **Despliegue** | Bastionado de la configuración, gestión de secretos, revisión de la configuración por defecto, firma de artefactos, segregación de entornos. |
@@ -645,9 +644,9 @@ El **ciclo de vida de desarrollo seguro** (**SSDLC**, *Secure Software Developme
 
 **DevSecOps** es la traducción del SSDLC a los entornos de entrega continua: las comprobaciones de seguridad se **automatizan dentro de la cadena de integración y despliegue** (análisis estático y de dependencias en cada confirmación, análisis dinámico sobre el entorno de preproducción, revisión de la configuración como código, escaneo de imágenes de contenedor) y se definen **puertas de calidad** que detienen el despliegue si se supera un umbral de severidad. La clave organizativa es que la seguridad deja de ser un departamento que dice «no» al final y pasa a ser **una responsabilidad compartida y automatizada**.
 
-> **[EJEMPLO AYTO MADRID]** Aplicado a la aplicación de cita previa, un SSDLC mínimo pero real consiste en: requisitos de seguridad tomados del nivel aplicable de ASVS y de las medidas del ENS correspondientes a la categoría del sistema; modelado de amenazas en el diseño (§3.1.2); **SAST y SCA automáticos en cada confirmación** del repositorio; **DAST** semanal sobre el entorno de preproducción; **prueba de penetración** por un tercero antes de la puesta en producción y tras cada cambio mayor; y, en operación, revisión mensual de dependencias y procedimiento de respuesta ante una vulnerabilidad publicada. Todo ello es exigible **contractualmente** al proveedor y verificable en la recepción.
+> **[EJEMPLO AYTO MADRID]** Aplicado a la aplicación de cita previa, un SSDLC mínimo pero real consiste en: requisitos de seguridad tomados del nivel aplicable de ASVS y de las medidas del ENS correspondientes a la categoría del sistema; modelado de amenazas en el diseño (§4.1.2); **SAST y SCA automáticos en cada confirmación** del repositorio; **DAST** semanal sobre el entorno de preproducción; **prueba de penetración** por un tercero antes de la puesta en producción y tras cada cambio mayor; y, en operación, revisión mensual de dependencias y procedimiento de respuesta ante una vulnerabilidad publicada. Todo ello es exigible **contractualmente** al proveedor y verificable en la recepción.
 
-#### 3.1.2. Análisis de requisitos y modelado de amenazas
+#### 4.1.2. Análisis de requisitos y modelado de amenazas
 
 **Requisitos de seguridad.** Un requisito de seguridad es tan específico y verificable como uno funcional. La diferencia con los requisitos funcionales está en su formulación: mientras estos describen **lo que el sistema debe hacer**, aquellos describen **lo que no debe poder ocurrir** y **cómo se comprueba**.
 
@@ -656,7 +655,7 @@ El **ciclo de vida de desarrollo seguro** (**SSDLC**, *Secure Software Developme
 
 Junto a ellos se documentan los **casos de abuso** (*abuse cases*): la contrapartida negativa de los casos de uso. Si un caso de uso es «el vecino consulta su expediente», el caso de abuso es «un usuario cambia el identificador del expediente en la URL y consulta el de otro vecino». Los casos de abuso alimentan directamente las pruebas de seguridad.
 
-En el sector público hay tres fuentes obligatorias de requisitos: el **ENS** (medidas exigibles según la categoría del sistema) `[ENS]`, el **RGPD** —**protección de datos desde el diseño y por defecto** del art. 25, seguridad del tratamiento del art. 32 y, cuando el tratamiento entrañe alto riesgo, **evaluación de impacto** del art. 35— `[RGPD]` `[AEPD-GUIA]`, y el **RD 1112/2018** de accesibilidad (§1.2.3), que también es un requisito no funcional verificable.
+En el sector público hay tres fuentes obligatorias de requisitos: el **ENS** (medidas exigibles según la categoría del sistema) `[ENS]`, el **RGPD** —**protección de datos desde el diseño y por defecto** del art. 25, seguridad del tratamiento del art. 32 y, cuando el tratamiento entrañe alto riesgo, **evaluación de impacto** del art. 35— `[RGPD]` `[AEPD-GUIA]`, y el **RD 1112/2018** de accesibilidad (§2.3), que también es un requisito no funcional verificable.
 
 > **[DATO CLAVE EXAMEN]** El **art. 25 del RGPD** impone dos obligaciones distintas: **protección de datos desde el diseño** (*by design*: las medidas se incorporan al determinar los medios de tratamiento, no después) y **protección de datos por defecto** (*by default*: sin intervención del usuario, solo se tratan los datos **necesarios** para cada finalidad, con la mínima accesibilidad y el mínimo plazo de conservación). Es el fundamento jurídico del desarrollo seguro en el sector público `[RGPD]`.
 
@@ -686,9 +685,9 @@ Para **priorizar** lo encontrado se usa el riesgo (**probabilidad × impacto**) 
 
 > **[EJERCICIO RESUELTO]** *Modele las amenazas del flujo «consulta del estado de un expediente» de la aplicación municipal.* **Solución (resumen)**: el diagrama tiene una entidad externa (vecino), un proceso (aplicación web), un almacén (base de datos de expedientes) y dos **límites de confianza**: el que separa el navegador del servidor y el que separa la aplicación de la base de datos. Aplicando STRIDE: **S** → alguien se hace pasar por el vecino (contramedida: Cl@ve o certificado, sesión robusta); **T** → manipulación del identificador del expediente en la petición (validación de **autorización en el servidor** para cada consulta, no confiar en el identificador recibido); **R** → el vecino niega haber presentado una solicitud (registro con sello de tiempo y, en actos con efectos jurídicos, firma electrónica); **I** → un error de la aplicación devuelve la traza con la consulta SQL y la ruta del servidor (**mensajes de error genéricos** al usuario, detalle solo al registro); **D** → automatización que satura el buscador de expedientes (limitación de peticiones por IP y por sesión); **E** → un usuario ordinario alcanza la pantalla de administración porque el enlace no aparece en su menú pero la ruta no comprueba el rol (**comprobar el rol en el servidor en cada operación**, no ocultar en el cliente). Obsérvese que cuatro de las seis mitigaciones son **decisiones de diseño**, no configuraciones.
 
-### 3.2. Principios y prácticas de codificación segura
+### 4.2. Principios y prácticas de codificación segura
 
-#### 3.2.1. Principios de diseño seguro y defensa en profundidad
+#### 4.2.1. Principios de diseño seguro y defensa en profundidad
 
 Los **ocho principios de Saltzer y Schroeder** (1975) siguen siendo la base conceptual del diseño seguro y son materia habitual de examen `[SALTZER75]`:
 
@@ -717,7 +716,7 @@ A ellos se añaden principios modernos de uso corriente:
 
 > **[EJEMPLO AYTO MADRID]** Aplicando **mediación completa** y **fallar de forma seguro** al portal de expedientes: no basta con que el menú del vecino solo muestre sus expedientes (eso es **ocultar en el cliente**, no autorizar). Cada petición al servidor debe comprobar que el expediente solicitado pertenece al usuario autenticado; y si el servicio de identidad no está disponible y no puede comprobarse el rol, la respuesta correcta es **denegar el acceso**, no conceder el mínimo «para no bloquear el servicio».
 
-#### 3.2.2. Validación y sanitización de entradas y salidas
+#### 4.2.2. Validación y sanitización de entradas y salidas
 
 Casi todas las vulnerabilidades clásicas de inyección tienen un mismo origen: **el sistema no distingue entre datos y código**. El usuario envía algo que se interpreta como instrucción —una consulta SQL, una etiqueta de guion, un mandato del sistema operativo, un fragmento de LDAP— en lugar de tratarse como texto inerte.
 
@@ -726,7 +725,7 @@ Casi todas las vulnerabilidades clásicas de inyección tienen un mismo origen: 
 1. **Validar siempre en el servidor.** La validación en el cliente es **usabilidad**, no seguridad: el atacante no usa el formulario, envía la petición directamente.
 2. **Lista blanca** (*allow list*) antes que lista negra: aceptar solo lo que encaja con lo previsto —tipo, longitud, rango, formato, conjunto de valores admitidos— en lugar de intentar enumerar lo peligroso, enumeración que siempre queda incompleta.
 3. **Canonicalizar antes de validar**: normalizar la codificación (UTF-8, `%2e%2e%2f`, dobles codificaciones, rutas relativas) **antes** de comprobar, o el atacante evadirá la comprobación con una representación alternativa del mismo valor.
-4. **Validar tipo y dominio semántico**, no solo formato: que un identificador de expediente tenga la forma correcta no significa que **ese** usuario pueda verlo (eso es autorización, §3.2.3).
+4. **Validar tipo y dominio semántico**, no solo formato: que un identificador de expediente tenga la forma correcta no significa que **ese** usuario pueda verlo (eso es autorización, §4.2.3).
 5. **Límites explícitos**: longitud máxima de cada campo, tamaño máximo de la petición y del fichero, número máximo de elementos de una lista. Previene desbordamientos y denegaciones de servicio.
 6. **Ficheros subidos**: validar tipo real (no solo la extensión ni el `Content-Type` declarado), tamaño y contenido; **renombrar** con un nombre generado; almacenar **fuera de la raíz web**; nunca permitir su ejecución; analizarlos con antivirus.
 
@@ -771,7 +770,7 @@ elemento.textContent = comentarioDelVecino;
 
 Los tres tipos de **XSS** que conviene distinguir: **almacenado** (la carga se guarda en el servidor —un comentario— y afecta a todos los que la ven; el más grave), **reflejado** (la carga viaja en la petición y se devuelve en la respuesta; requiere engañar a la víctima para que siga un enlace) y **basado en DOM** (nunca llega al servidor: el guion del cliente escribe en el documento un valor tomado de la URL o del almacenamiento local).
 
-#### 3.2.3. Gestión segura de sesiones, autenticación y autorización
+#### 4.2.3. Gestión segura de sesiones, autenticación y autorización
 
 ##### 3.2.3.1. Mecanismos de autenticación y control de acceso en aplicaciones
 
@@ -780,7 +779,7 @@ Los tres tipos de **XSS** que conviene distinguir: **almacenado** (la carga se g
 - **Almacenamiento de credenciales**: nunca en claro ni cifradas de forma reversible. Función de derivación diseñada para contraseñas —**Argon2id**, **scrypt**, **bcrypt** o **PBKDF2**— con **sal única por usuario** y parámetros de coste ajustados al hardware actual.
 - **Mensajes de error genéricos**: «usuario o contraseña incorrectos», nunca «ese usuario no existe», que permitiría **enumerar cuentas**. El mismo criterio se aplica a la recuperación de contraseña y al alta.
 - **Tiempo de respuesta constante** en la comprobación, para no revelar por el retardo si el usuario existe.
-- **Protección frente a fuerza bruta y relleno de credenciales**: limitación de intentos con retardo progresivo, bloqueo temporal, y desafío adicional ante patrones sospechosos (teniendo en cuenta el criterio **3.3.8 de WCAG 2.2**, que exige que la autenticación no imponga pruebas cognitivas sin alternativa accesible — §1.2.1).
+- **Protección frente a fuerza bruta y relleno de credenciales**: limitación de intentos con retardo progresivo, bloqueo temporal, y desafío adicional ante patrones sospechosos (teniendo en cuenta el criterio **3.3.8 de WCAG 2.2**, que exige que la autenticación no imponga pruebas cognitivas sin alternativa accesible — §2.1).
 - **MFA** para cuentas con privilegios y para operaciones sensibles; preferentemente resistente al *phishing* (**FIDO2/WebAuthn** `[WEBAUTHN]`).
 - **Recuperación de contraseña segura**: token aleatorio de un solo uso, de vida corta, enviado por un canal verificado, que **no revela** si la cuenta existe y que **invalida las sesiones activas** al completarse el cambio.
 - **Delegación de la identidad** cuando sea posible: en el sector público español, **Cl@ve**, certificado electrónico o DNIe, mediante **OpenID Connect** sobre **OAuth 2.0** `[RFC6749]`, evitando gestionar credenciales propias.
@@ -795,7 +794,7 @@ Para aplicaciones que se ejecutan en el navegador o en el móvil —**clientes p
 2. **Comprobar en el servidor y en cada operación** (**mediación completa**). Ocultar un botón, deshabilitar un campo o no incluir un enlace en el menú **no es autorización**.
 3. **Autorización a nivel de objeto**, no solo de función: no basta con comprobar que el usuario tiene el rol «consulta de expedientes»; hay que comprobar que **ese expediente concreto** le corresponde. Su ausencia produce las **referencias directas a objetos inseguras** (IDOR), la vulnerabilidad más frecuente y más fácil de explotar: basta cambiar un número en la URL.
 4. **Modelo centralizado y único**: un único componente de decisión reutilizado por toda la aplicación, no comprobaciones dispersas y divergentes en cada controlador.
-5. **RBAC/ABAC** coherente con la organización, con revisión periódica de las asignaciones (§2.2.1).
+5. **RBAC/ABAC** coherente con la organización, con revisión periódica de las asignaciones (§3.2.1).
 6. **Registrar los fallos de autorización** y alertar ante patrones (un usuario que prueba cien identificadores consecutivos).
 7. **Proteger también las API**: los servicios que consume el cliente son la superficie real de ataque, y deben aplicar exactamente las mismas comprobaciones que la interfaz.
 
@@ -840,7 +839,7 @@ Requisitos de uso seguro `[RFC8725]`:
 
 > **[DATO CLAVE EXAMEN]** Diferencia entre los dos modelos, muy preguntada: la **sesión en servidor** es **revocable de inmediato** (basta borrarla del almacén) pero exige estado compartido; el **JWT** es **sin estado y escalable** pero **no revocable** hasta su caducidad, por lo que exige vidas cortas y un mecanismo adicional de revocación. Y en ambos casos: **el identificador de sesión o el *token* equivalen a la credencial** `[RFC7519]` `[RFC8725]`.
 
-#### 3.2.4. Registro de auditoría y tratamiento de excepciones
+#### 4.2.4. Registro de auditoría y tratamiento de excepciones
 
 **Registro de auditoría** (*logging*). Su función es triple: **detectar** un incidente, **investigarlo** después y sostener el **no repudio** de las actuaciones. Sin registro no hay respuesta posible: la organización se entera del ataque por terceros y no puede determinar su alcance. Es, por eso, la categoría **A09:2021 «Fallos de registro y monitorización»** del OWASP Top 10 `[OWASP-TOP10]` y un requisito expreso del ENS `[ENS]`.
 
@@ -857,7 +856,7 @@ Requisitos de uso seguro `[RFC8725]`:
 **Tratamiento de excepciones y errores.** El principio rector es **fallar de forma segura y callada hacia fuera, ruidosa hacia dentro**:
 
 - Ante un error inesperado, el sistema debe quedar en el estado **denegado**, nunca conceder acceso ni continuar con datos inconsistentes.
-- Al usuario se le devuelve un **mensaje genérico** («No se ha podido completar la operación. Código de referencia: `A7F2-31`»), en lenguaje claro y accesible (§1.2.1, criterio 3.3.1); el **detalle técnico** —traza, consulta, versión, ruta— va **solo al registro**, correlacionado por ese código.
+- Al usuario se le devuelve un **mensaje genérico** («No se ha podido completar la operación. Código de referencia: `A7F2-31`»), en lenguaje claro y accesible (§2.1, criterio 3.3.1); el **detalle técnico** —traza, consulta, versión, ruta— va **solo al registro**, correlacionado por ese código.
 - Deben **desactivarse en producción** los modos de depuración, las páginas de error detalladas de los marcos de trabajo y los listados de directorio. Su presencia es una **revelación de información** (STRIDE: *Information disclosure*) que da al atacante el mapa del sistema.
 - **No capturar excepciones de forma genérica y silenciosa**: un `catch` vacío oculta precisamente el fallo de seguridad que interesa detectar.
 - **Liberar recursos** de forma garantizada y no dejar transacciones a medias; la excepción debe dejar el sistema en un estado coherente.
@@ -876,11 +875,11 @@ catch (SQLException e) {
 }
 ```
 
-> **[EJEMPLO AYTO MADRID]** En el buscador de expedientes, una consulta con un carácter inesperado devolvía una página con la traza completa de la excepción: nombre del servidor, versión del gestor de base de datos, ruta física de la aplicación y la sentencia SQL con el nombre de las tablas. Ningún dato personal se había filtrado, pero el atacante ya tenía **el mapa de la aplicación y la confirmación de que la consulta se construye por concatenación**. La corrección es doble: página de error genérica con código de referencia y detalle solo en el registro, **y** eliminar la concatenación (§3.2.2).
+> **[EJEMPLO AYTO MADRID]** En el buscador de expedientes, una consulta con un carácter inesperado devolvía una página con la traza completa de la excepción: nombre del servidor, versión del gestor de base de datos, ruta física de la aplicación y la sentencia SQL con el nombre de las tablas. Ningún dato personal se había filtrado, pero el atacante ya tenía **el mapa de la aplicación y la confirmación de que la consulta se construye por concatenación**. La corrección es doble: página de error genérica con código de referencia y detalle solo en el registro, **y** eliminar la concatenación (§4.2.2).
 
-### 3.3. Vulnerabilidades y verificación de la seguridad
+### 4.3. Vulnerabilidades y verificación de la seguridad
 
-#### 3.3.1. Vulnerabilidades en el desarrollo de software y catálogo OWASP
+#### 4.3.1. Vulnerabilidades en el desarrollo de software y catálogo OWASP
 
 Conviene fijar primero el vocabulario, porque se pregunta con frecuencia:
 
@@ -915,7 +914,7 @@ Conviene fijar primero el vocabulario, porque se pregunta con frecuencia:
 
 Otros catálogos de OWASP que conviene identificar por su ámbito: **API Security Top 10** (riesgos propios de las API, donde predominan los fallos de autorización a nivel de objeto y de propiedad), **Mobile Top 10** (aplicaciones móviles, §Tema 24), **Top 10 Proactive Controls** `[OWASP-PROACTIVE]` —la versión «en positivo»: qué hacer, no qué evitar— y las **Cheat Sheets** `[OWASP-CHEAT]`, guías concretas por materia. **CAPEC** `[CAPEC]` cataloga los **patrones de ataque** y **MITRE ATT&CK** `[ATTACK]` las tácticas y técnicas observadas en incidentes reales.
 
-#### 3.3.2. Análisis de seguridad mediante técnicas estáticas y dinámicas
+#### 4.3.2. Análisis de seguridad mediante técnicas estáticas y dinámicas
 
 Ninguna técnica encuentra todo. La verificación seria **combina** varias, cada una con su momento del ciclo, su alcance y su punto ciego.
 
@@ -934,7 +933,7 @@ Ninguna técnica encuentra todo. La verificación seria **combina** varias, cada
 
 **Gestión de las vulnerabilidades encontradas**: registrar, **priorizar** por riesgo real —CVSS `[CVSS]` **más** exposición del activo y existencia de explotación activa, no CVSS a secas—, asignar responsable y plazo por severidad, corregir, **verificar la corrección** y analizar la causa raíz para que no reaparezca. Y una vía de **divulgación responsable** publicada (fichero `security.txt`, buzón de contacto) para que quien encuentre un fallo desde fuera pueda comunicarlo sin exponerlo.
 
-#### 3.3.3. Bastionado de aplicaciones y gestión de dependencias
+#### 4.3.3. Bastionado de aplicaciones y gestión de dependencias
 
 **Bastionado** (*hardening*) es reducir la superficie de ataque de la aplicación y de su entorno de ejecución hasta el mínimo funcionalmente necesario. Actúa sobre la categoría **A05** del Top 10 `[OWASP-TOP10]` y se apoya, en el sector público español, en las guías **CCN-STIC** de configuración segura `[CCN-STIC]`.
 
@@ -984,7 +983,7 @@ Permissions-Policy: geolocation=(), camera=(), microphone=()
 
 ---
 
-## Cierre: los tres bloques como un solo criterio de calidad
+## Cierre: las cuatro materias como un solo criterio de calidad
 
 El tema reúne tres materias que las convocatorias presentan juntas por una razón de fondo. Un servicio público electrónico solo está bien construido cuando cumple simultáneamente tres condiciones, y las tres son **obligaciones jurídicas** además de buenas prácticas técnicas:
 

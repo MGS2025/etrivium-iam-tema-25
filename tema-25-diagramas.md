@@ -15,26 +15,26 @@
 
 | ID | Título | Sección | Tipo | Formato |
 |---|---|---|---|---|
-| D1 | Accesibilidad, usabilidad, UX y diseño universal: cómo se relacionan | §1.1 | Esquema conceptual | 680×330 |
-| D2 | Los siete principios del diseño universal | §1.1.2 | Bloques | 680×340 |
-| D3 | ISO 9241 e ISO/IEC 25010: qué mide cada norma | §1.1.3 | Comparativa | 680×370 |
-| D4 | Los cuatro principios POUR y la estructura normativa de WCAG | §1.2.1 | Jerarquía | 680×360 |
-| D5 | Niveles de conformidad y evolución de WCAG | §1.2.1 | Escalera + línea temporal | 680×346 |
-| D6 | La cadena normativa de la accesibilidad: de la ONU al RD 1112/2018 | §1.2.3 | Flujo normativo | 680×370 |
-| D7 | Evaluación, declaración y reclamación de accesibilidad | §1.2.4 | Flujo | 680×350 |
-| D8 | Amenazas y controles en el puesto de usuario final | §2.1 | Matriz | 680×370 |
-| D9 | Control de acceso: cuatro pasos y tres factores | §2.2.1 | Flujo + bloques | 680×350 |
-| D10 | Cifrado en reposo y en tránsito en el puesto | §2.2.2 | Esquema | 680×330 |
-| D11 | Copias de seguridad: tipos, regla 3-2-1 y RPO/RTO | §2.3.2 | Esquema temporal | 680×370 |
-| D12 | El ciclo de vida de desarrollo seguro (SSDLC) | §3.1.1 | Flujo por fases | 680×350 |
-| D13 | STRIDE: seis amenazas y la propiedad que niega cada una | §3.1.2 | Tabla visual | 680×350 |
-| D14 | OWASP Top 10:2021 y técnicas de verificación | §3.3 | Bloques + comparativa | 680×414 |
+| D1 | Accesibilidad, usabilidad, UX y diseño universal: cómo se relacionan | §1 | Esquema conceptual | 680×330 |
+| D2 | Los siete principios del diseño universal | §1.2 | Bloques | 680×340 |
+| D3 | ISO 9241 e ISO/IEC 25010: qué mide cada norma | §1.3 | Comparativa | 680×370 |
+| D4 | Los cuatro principios POUR y la estructura normativa de WCAG | §2.1 | Jerarquía | 680×360 |
+| D5 | Niveles de conformidad y evolución de WCAG | §2.1 | Escalera + línea temporal | 680×346 |
+| D6 | La cadena normativa de la accesibilidad: de la ONU al RD 1112/2018 | §2.3 | Flujo normativo | 680×370 |
+| D7 | Evaluación, declaración y reclamación de accesibilidad | §2.4 | Flujo | 680×350 |
+| D8 | Amenazas y controles en el puesto de usuario final | §3.1 | Matriz | 680×370 |
+| D9 | Control de acceso: cuatro pasos y tres factores | §3.2.1 | Flujo + bloques | 680×350 |
+| D10 | Cifrado en reposo y en tránsito en el puesto | §3.2.2 | Esquema | 680×330 |
+| D11 | Copias de seguridad: tipos, regla 3-2-1 y RPO/RTO | §3.3.2 | Esquema temporal | 680×370 |
+| D12 | El ciclo de vida de desarrollo seguro (SSDLC) | §4.1.1 | Flujo por fases | 680×350 |
+| D13 | STRIDE: seis amenazas y la propiedad que niega cada una | §4.1.2 | Tabla visual | 680×350 |
+| D14 | OWASP Top 10:2021 y técnicas de verificación | §4.3 | Bloques + comparativa | 680×414 |
 
 ---
 
 ## D1 · Accesibilidad, usabilidad, UX y diseño universal: cómo se relacionan
 
-**Sección**: §1.1 — Usabilidad y diseño universal
+**Sección**: §1 — Usabilidad y diseño universal
 **Propósito**: Fijar de un vistazo la diferencia entre los cuatro conceptos que el tema exige no confundir, y su encadenamiento lógico.
 
 ```svg
@@ -93,7 +93,7 @@
 
 ## D2 · Los siete principios del diseño universal
 
-**Sección**: §1.1.2 — Fundamentos del diseño universal y diseño para todos
+**Sección**: §1.2 — Fundamentos del diseño universal y diseño para todos
 **Propósito**: Memorizar los siete principios de 1997 con su traducción directa al software.
 
 ```svg
@@ -146,7 +146,7 @@
 
 ## D3 · ISO 9241 e ISO/IEC 25010: qué mide cada norma
 
-**Sección**: §1.1.3 — Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
+**Sección**: §1.3 — Modelos de calidad e ISO/IEC 9241 e ISO/IEC 25010
 **Propósito**: Separar las dos familias de normas y localizar exactamente dónde encajan accesibilidad, disponibilidad y confidencialidad dentro del modelo de calidad del producto.
 
 ```svg
@@ -199,7 +199,7 @@
 
 ## D4 · Los cuatro principios POUR y la estructura normativa de WCAG
 
-**Sección**: §1.2.1 — Pautas de accesibilidad al contenido web WCAG
+**Sección**: §2.1 — Pautas de accesibilidad al contenido web WCAG
 **Propósito**: Fijar la jerarquía principio → pauta → criterio → técnica, y qué parte de ella es normativa.
 
 ```svg
@@ -264,7 +264,7 @@
 
 ## D5 · Niveles de conformidad y evolución de WCAG
 
-**Sección**: §1.2.1 — Pautas de accesibilidad al contenido web WCAG
+**Sección**: §2.1 — Pautas de accesibilidad al contenido web WCAG
 **Propósito**: Fijar el carácter acumulativo de los niveles, el nivel legalmente exigible y las fechas y aportaciones de cada versión.
 
 ```svg
@@ -313,7 +313,7 @@
 
 ## D6 · La cadena normativa de la accesibilidad: de la ONU al RD 1112/2018
 
-**Sección**: §1.2.3 — Marco normativo en la Administración Pública
+**Sección**: §2.3 — Marco normativo en la Administración Pública
 **Propósito**: Ordenar los cinco eslabones normativos y el contenido esencial del real decreto que obliga a un ayuntamiento.
 
 ```svg
@@ -387,7 +387,7 @@
 
 ## D7 · Evaluación, declaración y reclamación de accesibilidad
 
-**Sección**: §1.2.4 — Evaluación, auditoría y declaración de accesibilidad
+**Sección**: §2.4 — Evaluación, auditoría y declaración de accesibilidad
 **Propósito**: Encadenar los cinco pasos de WCAG-EM, los tres tipos de comprobación con su alcance real y el contenido obligatorio de la declaración.
 
 ```svg
@@ -452,7 +452,7 @@
 
 ## D8 · Amenazas y controles en el puesto de usuario final
 
-**Sección**: §2.1 — Seguridad en el puesto de usuario final
+**Sección**: §3.1 — Seguridad en el puesto de usuario final
 **Propósito**: Cruzar las cuatro familias de amenazas del puesto con los controles de las cuatro naturalezas de ISO/IEC 27002 y con las dimensiones de seguridad del ENS.
 
 ```svg
@@ -528,7 +528,7 @@
 
 ## D9 · Control de acceso: cuatro pasos y tres factores
 
-**Sección**: §2.2.1 — Autenticación de usuarios y principio de mínimo privilegio
+**Sección**: §3.2.1 — Autenticación de usuarios y principio de mínimo privilegio
 **Propósito**: Separar identificación, autenticación, autorización y trazabilidad, y ordenar los factores y modelos de autorización.
 
 ```svg
@@ -590,7 +590,7 @@
 
 ## D10 · Cifrado en reposo y en tránsito en el puesto
 
-**Sección**: §2.2.2 — Cifrado de almacenamiento local y comunicaciones
+**Sección**: §3.2.2 — Cifrado de almacenamiento local y comunicaciones
 **Propósito**: Situar las tres granularidades del cifrado en reposo, los protocolos del cifrado en tránsito y, sobre todo, el límite real del cifrado de disco completo.
 
 ```svg
@@ -639,7 +639,7 @@
 
 ## D11 · Copias de seguridad: tipos, regla 3-2-1 y RPO/RTO
 
-**Sección**: §2.3.2 — Copias de seguridad y prevención de pérdida de datos
+**Sección**: §3.3.2 — Copias de seguridad y prevención de pérdida de datos
 **Propósito**: Distinguir completa, diferencial e incremental por lo que copian y por lo que exige su restauración, y fijar RPO y RTO sobre la línea temporal del incidente.
 
 ```svg
@@ -703,7 +703,7 @@
 
 ## D12 · El ciclo de vida de desarrollo seguro (SSDLC)
 
-**Sección**: §3.1.1 — Modelos e integración de la seguridad en el desarrollo
+**Sección**: §4.1.1 — Modelos e integración de la seguridad en el desarrollo
 **Propósito**: Ver la seguridad como actividad de todas las fases y situar los modelos de referencia según lo que aportan.
 
 ```svg
@@ -774,7 +774,7 @@
 
 ## D13 · STRIDE: seis amenazas y la propiedad que niega cada una
 
-**Sección**: §3.1.2 — Análisis de requisitos y modelado de amenazas
+**Sección**: §4.1.2 — Análisis de requisitos y modelado de amenazas
 **Propósito**: Memorizar el emparejamiento amenaza-propiedad-contramedida y las cuatro preguntas del modelado.
 
 ```svg
@@ -839,7 +839,7 @@
 
 ## D14 · OWASP Top 10:2021 y técnicas de verificación
 
-**Sección**: §3.3 — Vulnerabilidades y verificación de la seguridad
+**Sección**: §4.3 — Vulnerabilidades y verificación de la seguridad
 **Propósito**: Fijar las diez categorías de riesgo (señalando las tres nuevas de 2021) y contrastar las técnicas de verificación por lo que ve y por lo que no ve cada una.
 
 ```svg
