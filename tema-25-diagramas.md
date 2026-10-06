@@ -596,7 +596,7 @@
 **Propósito**: Situar las tres granularidades del cifrado en reposo, los protocolos del cifrado en tránsito y, sobre todo, el límite real del cifrado de disco completo.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-label="Cifrado en el puesto de usuario: en reposo con cifrado de disco completo, de volumen o de fichero, apoyado en el chip TPM; en tránsito con TLS 1.3, VPN, SSH, SFTP y LDAPS; y advertencia de que el cifrado de disco completo protege el equipo apagado pero no la sesión iniciada">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 338" role="img" aria-label="Cifrado en el puesto de usuario: en reposo con cifrado de disco completo, de volumen o de fichero, apoyado en el chip TPM; en tránsito con TLS 1.3, VPN, SSH, SFTP y LDAPS; y advertencia de que el cifrado de disco completo protege el equipo apagado pero no la sesión iniciada">
   <style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:9px system-ui,sans-serif;fill:#fff}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d10{font:9px system-ui,sans-serif;fill:#333}</style>
   <text x="340" y="20" text-anchor="middle" class="h10">El cifrado: la última línea de defensa de la confidencialidad</text>
   <rect x="20" y="34" width="315" height="28" rx="5" fill="#0055a0"/>
@@ -633,7 +633,7 @@
   <text x="505" y="277" text-anchor="middle" class="s10">Usuario legítimo que exfiltra el dato</text>
   <rect x="60" y="290" width="560" height="26" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
   <text x="340" y="307" text-anchor="middle" style="font:700 10px system-ui;fill:#0055a0">Sin custodia y recuperación de claves, la confidencialidad se convierte en pérdida de disponibilidad</text>
-  <text x="670" y="326" text-anchor="end" style="font:11px system-ui;fill:#666">[Fuente: NIST-800-111; RFC9846; FIPS197; ENS]</text>
+  <text x="670" y="333" text-anchor="end" style="font:11px system-ui;fill:#666">[Fuente: NIST-800-111; RFC9846; FIPS197; ENS]</text>
 </svg>
 ```
 
@@ -721,7 +721,7 @@
   <text x="180" y="54" text-anchor="middle" class="t12">DISEÑO</text>
   <text x="180" y="71" text-anchor="middle" class="s12">MODELADO DE</text>
   <text x="180" y="84" text-anchor="middle" class="s12">AMENAZAS</text>
-  <text x="180" y="97" text-anchor="middle" class="s12">Privacidad desde diseño</text>
+  <text x="180" y="97" text-anchor="middle" class="s12" style="font-size:7.5px">Privacidad desde diseño</text>
   <rect x="238" y="36" width="103" height="72" rx="5" fill="#2d8659"/>
   <text x="289" y="54" text-anchor="middle" class="t12">IMPLEMENTACIÓN</text>
   <text x="289" y="71" text-anchor="middle" class="s12">Codificación segura</text>
