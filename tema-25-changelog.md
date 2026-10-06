@@ -4,6 +4,25 @@
 
 ---
 
+## v1.3 — 2026-10-01 — Normas vigentes y correcciones comunes de la revisión
+
+**Motivo**: revisión de la serie del 01-10-2026 (decisiones de Joan y María): normas caducadas con el patrón de dos filas en Fuentes y correcciones comunes (referencias al cliente y al origen del material, promesas sobre el examen, AP → AAPP).
+
+### Cambios
+
+- **ISO/IEC 25010:2023 (opción B)**: §1.3 pasa al modelo de 2023 (nueve características, tabla de subcaracterísticas completa). El «Dato clave» que daba la accesibilidad como subcaracterística de la usabilidad (falso con la edición de 2023) se reescribe: su contenido lo cubren ahora la inclusividad y la asistencia al usuario, dentro de la capacidad de interacción. Se ajustan la regla mnemotécnica y el ejemplo de pliego.
+- Diagrama D3 rehecho al modelo de 2023: 9 características, «Capacidad de interacción» y subcaracterística «Inclusividad»; aria-label actualizado. QA de SVG sin incidencias en D3.
+- Test: **pregunta 6 reescrita** (ahora pregunta qué subcaracterísticas de 25010:2023 cubren lo que en 2011 era «accesibilidad»; la correcta sigue siendo la C). Pregunta 7: solo la explicación.
+- **RFC 8446 → RFC 9846**: fila vigente y fila histórica en Fuentes; cita de §3 y fuente del diagrama D10 pasan a RFC 9846.
+- Fuentes: `[ISO25010]` pasa a 2023 y se añade `[ISO25010-2011]` como histórica.
+- **Calidad en uso → ISO/IEC 25019:2023**: la edición de 2023 separa este modelo de la 25010. §1.3 deja de enumerar las cinco características de 2011 (eficacia, eficiencia, satisfacción, ausencia de riesgo, cobertura del contexto) y pasa a las tres de la 25019 (beneficio, ausencia de riesgo y aceptabilidad); la cobertura del contexto desaparece. Nueva fila `[ISO25019]` en Fuentes y rótulo del diagrama D3 actualizado.
+- Leyenda de las cajas: se quita «con alta probabilidad de aparecer en el test oficial».
+- Fuera las promesas sobre el examen en contenido (unas veinte: «se preguntan», «muy preguntada», «materia habitual de examen», «la que más rinde en un caso de examen»…).
+- Índice y validación: fuera las referencias al «esqueleto oficial».
+- Títulos de las cajas homogeneizados con los temas 1-10 (revisión jurídica): «Dato clave», «Ejemplo de aplicación en el Ayto» y «Relación con otros temas»; las cajas «Ejercicio resuelto» no cambian.
+
+---
+
 ## v1.2 — 2026-09-06 — Ajuste a la literalidad del título
 
 **Estado**: pendiente de validación por el IAM.

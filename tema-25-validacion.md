@@ -16,7 +16,7 @@
 - [ ] **Control de acceso y protección criptográfica**: autenticación y mínimo privilegio, cifrado de almacenamiento local y comunicaciones — §3.2
 - [ ] **Seguridad operativa y prevención de pérdida de datos**: código malicioso en el endpoint, copias de seguridad y DLP, ENS en el puesto — §3.3
 - [ ] **Ciclo de vida de desarrollo seguro**: modelos e integración, análisis de requisitos y modelado de amenazas — §4.1
-- [ ] **Principios y prácticas de codificación segura**: diseño seguro y defensa en profundidad, validación y sanitización, sesiones/autenticación/autorización (con los dos apartados de cuarto nivel del esqueleto), registro y excepciones — §4.2
+- [ ] **Principios y prácticas de codificación segura**: diseño seguro y defensa en profundidad, validación y sanitización, sesiones/autenticación/autorización (con sus dos apartados de cuarto nivel), registro y excepciones — §4.2
 - [ ] **Vulnerabilidades y verificación**: catálogo OWASP, técnicas estáticas y dinámicas, bastionado y gestión de dependencias — §4.3
 
 ## 2. Contenido teórico
@@ -72,7 +72,7 @@
 - [ ] Coherencia de versión (v1.0) en title, badges, banner y footer del `index.html`
 - [ ] El `index.html` abre, navega entre las 8 pestañas y el motor de test funciona
 - [ ] Las listas anidadas del Contenido se muestran con sus niveles (sin aplanar)
-- [ ] El **quinto nivel de encabezado** (§4.2.3.1 y §4.2.3.2, exigido por el esqueleto oficial) se renderiza con estilo propio y diferenciado del cuarto
+- [ ] El **quinto nivel de encabezado** (§4.2.3.1 y §4.2.3.2) se renderiza con estilo propio y diferenciado del cuarto
 - [ ] Los bloques de código Java, Python, JavaScript, SQL y HTTP se muestran correctamente formateados, sin markdown crudo
 
 ---

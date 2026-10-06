@@ -105,15 +105,15 @@ C) Diez principios, entre ellos la visibilidad del estado del sistema
 
 ### Pregunta 6
 
-**En el modelo de calidad del producto software ISO/IEC 25010, la accesibilidad es:**
+**En el modelo de calidad del producto software ISO/IEC 25010:2023, el contenido que la edición de 2011 recogía como subcaracterística «accesibilidad» se cubre con:**
 
 A) Una característica independiente, al mismo nivel que la fiabilidad
-B) Una subcaracterística de la seguridad
-C) Una subcaracterística de la usabilidad
+B) La subcaracterística de confidencialidad, dentro de la seguridad
+C) Las subcaracterísticas de inclusividad y asistencia al usuario, dentro de la capacidad de interacción
 
 <details><summary>Respuesta</summary>
 
-**Correcta: C) Una subcaracterística de la usabilidad** En el mismo modelo, la disponibilidad es subcaracterística de la fiabilidad y la confidencialidad lo es de la seguridad: las tres piezas que dan título a este tema están en tres características distintas.
+**Correcta: C) Las subcaracterísticas de inclusividad y asistencia al usuario, dentro de la capacidad de interacción** La edición de 2023 ya no recoge la accesibilidad como subcaracterística. En el mismo modelo, la disponibilidad es subcaracterística de la fiabilidad y la confidencialidad lo es de la seguridad: las tres piezas que dan título a este tema están en tres características distintas.
 
 *Referencia: §1.3 [ISO25010]*
 </details>
@@ -130,7 +130,7 @@ C) ISO 9241 es una norma de ergonomía centrada en el proceso y la interacción;
 
 <details><summary>Respuesta</summary>
 
-**Correcta: C) ISO 9241 es una norma de ergonomía centrada en el proceso y la interacción; SQuaRE mide la calidad del producto software** La usabilidad aparece en ambas familias, pero con perspectivas distintas: como resultado del contexto de uso en ISO 9241-11 y como característica medible del producto en ISO/IEC 25010.
+**Correcta: C) ISO 9241 es una norma de ergonomía centrada en el proceso y la interacción; SQuaRE mide la calidad del producto software** La usabilidad aparece en ambas familias, pero con perspectivas distintas: como resultado del contexto de uso en ISO 9241-11 y como característica medible del producto en ISO/IEC 25010, que en su edición de 2023 la denomina capacidad de interacción.
 
 *Referencia: §1.3 [ISO9241-11] [ISO25000]*
 </details>

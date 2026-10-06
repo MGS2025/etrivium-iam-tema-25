@@ -48,7 +48,7 @@
    4.3.2. Análisis de seguridad mediante técnicas estáticas y dinámicas
    4.3.3. Bastionado de aplicaciones y gestión de dependencias
 
-*Dentro del epígrafe 4.2.3 el contenido desarrolla dos apartados de cuarto nivel previstos en el esqueleto oficial: 4.2.3.1 «Mecanismos de autenticación y control de acceso en aplicaciones» y 4.2.3.2 «Manejo seguro de tokens y control de sesiones».*
+*Dentro del epígrafe 4.2.3 el contenido desarrolla dos apartados de cuarto nivel: 4.2.3.1 «Mecanismos de autenticación y control de acceso en aplicaciones» y 4.2.3.2 «Manejo seguro de tokens y control de sesiones».*
 
 ---
 

@@ -23,7 +23,9 @@
 | `[ISO9241-110]` | ISO 9241-110:2020. *Part 110: Interaction principles*. Los siete principios de interacción (idoneidad para la tarea, carácter autodescriptivo, conformidad con las expectativas, aprendizaje, controlabilidad, robustez frente a errores de uso y compromiso del usuario). |
 | `[ISO9241-210]` | ISO 9241-210:2019. *Part 210: Human-centred design for interactive systems*. Proceso iterativo de diseño centrado en el usuario en cuatro actividades. |
 | `[ISO9241-171]` | ISO 9241-171:2008. *Part 171: Guidance on software accessibility*. Requisitos y recomendaciones de accesibilidad del software. |
-| `[ISO25010]` | ISO/IEC 25010 (serie SQuaRE). *Modelo de calidad del producto software*: adecuación funcional, eficiencia de desempeño, compatibilidad, **usabilidad**, fiabilidad, **seguridad**, mantenibilidad y portabilidad, con sus subcaracterísticas. |
+| `[ISO25010]` | ISO/IEC 25010:2023 (serie SQuaRE). *Modelo de calidad del producto software*, edición vigente, que anula y sustituye a la de 2011: adecuación funcional, eficiencia de desempeño, compatibilidad, **capacidad de interacción** (antes «usabilidad»), fiabilidad, **seguridad**, mantenibilidad, flexibilidad (antes «portabilidad») y protección (*safety*), con sus subcaracterísticas. |
+| `[ISO25010-2011]` | ISO/IEC 25010:2011 (serie SQuaRE). *System and software quality models*: ocho características (adecuación funcional, eficiencia de desempeño, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad y portabilidad), con la accesibilidad como subcaracterística de la usabilidad. Anulada y sustituida por la ISO/IEC 25010:2023. Se conserva la referencia porque es la que recogen los temarios al uso. |
+| `[ISO25019]` | ISO/IEC 25019:2023 (serie SQuaRE). *Quality-in-use model*. Con la 25002 y la 25010:2023, anula y sustituye a la 25010:2011, de la que separa el modelo de calidad en uso: beneficio, ausencia de riesgo y aceptabilidad. |
 | `[ISO25000]` | ISO/IEC 25000 (SQuaRE). *Systems and software Quality Requirements and Evaluation*. Marco general de la familia: modelos de calidad (2501n), medición (2502n), requisitos (2503n) y evaluación (2504n). |
 | `[ISO27001]` | UNE-EN ISO/IEC 27001. *Sistemas de gestión de la seguridad de la información — Requisitos*. Modelo de gestión basado en riesgos y mejora continua. |
 | `[ISO27002]` | UNE-EN ISO/IEC 27002:2022. *Controles de seguridad de la información*. 93 controles en cuatro temas (organizativos, personas, físicos y tecnológicos); referencia directa de los controles del puesto de usuario. |
@@ -62,7 +64,8 @@
 | `[RFC7519]` | IETF. *RFC 7519: JSON Web Token (JWT)*. Formato de *token* autocontenido y firmado. |
 | `[RFC8725]` | IETF. *RFC 8725: JSON Web Token Best Current Practices* (BCP 225). Prohíbe aceptar el algoritmo `none` y exige validar emisor, audiencia y caducidad. |
 | `[RFC9700]` | IETF. *RFC 9700: Best Current Practice for OAuth 2.0 Security* (BCP 240). Consolida las recomendaciones de seguridad de OAuth 2.0. |
-| `[RFC8446]` | IETF. *RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3*. Cifrado de las comunicaciones. |
+| `[RFC9846]` | IETF. *RFC 9846: The Transport Layer Security (TLS) Protocol Version 1.3* (julio de 2026). Obsoleta los RFC 5077, 5246, 6961, 7627, 8422 y 8446: es la especificación vigente de TLS 1.3 y sustituye a la de 2018. Cifrado de las comunicaciones. |
+| `[RFC8446]` | IETF. *RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3* (agosto de 2018). Obsoletado por el RFC 9846. Se conserva la referencia porque es la que recogen los temarios al uso. |
 | `[RFC6797]` | IETF. *RFC 6797: HTTP Strict Transport Security (HSTS)*. |
 | `[WEBAUTHN]` | W3C. *Web Authentication (WebAuthn) Level 2/3* y FIDO Alliance, *FIDO2/CTAP*. Autenticación con criptografía de clave pública resistente a la suplantación de identidad (*phishing*). |
 | `[FIPS197]` | NIST. *FIPS 197: Advanced Encryption Standard (AES)*. Algoritmo de cifrado simétrico de referencia. |

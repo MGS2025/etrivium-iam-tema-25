@@ -150,7 +150,7 @@
 **Propósito**: Separar las dos familias de normas y localizar exactamente dónde encajan accesibilidad, disponibilidad y confidencialidad dentro del modelo de calidad del producto.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 370" role="img" aria-label="Comparativa entre la serie ISO 9241 de ergonomía, que mide el proceso y la interacción, y la familia ISO/IEC 25000 SQuaRE con su modelo ISO/IEC 25010, que mide el producto software; se destaca que accesibilidad es subcaracterística de usabilidad, disponibilidad lo es de fiabilidad y confidencialidad e integridad lo son de seguridad">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 370" role="img" aria-label="Comparativa entre la serie ISO 9241 de ergonomía, que mide el proceso y la interacción, y la familia ISO/IEC 25000 SQuaRE con su modelo ISO/IEC 25010, que mide el producto software; se muestran las nueve características de la edición de 2023 y se destaca que la accesibilidad se cubre con la subcaracterística de inclusividad, dentro de la capacidad de interacción, que disponibilidad es subcaracterística de fiabilidad y que confidencialidad e integridad lo son de seguridad">
   <style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:9px system-ui,sans-serif;fill:#fff}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}</style>
   <text x="340" y="20" text-anchor="middle" class="h3">Dos familias de normas, dos objetos distintos</text>
   <rect x="20" y="32" width="315" height="30" rx="5" fill="#0055a0"/>
@@ -165,23 +165,24 @@
   <rect x="345" y="100" width="315" height="26" rx="4" fill="#eef3f8"/><text x="355" y="117" class="d3">2502n medición · 2503n requisitos · 2504n evaluación</text>
   <rect x="345" y="130" width="315" height="56" rx="4" fill="#eef3f8"/>
   <text x="355" y="147" class="d3">Tres modelos: calidad del PRODUCTO (25010),</text>
-  <text x="355" y="162" class="d3">calidad EN USO y calidad de los DATOS (25012)</text>
+  <text x="355" y="162" class="d3">calidad EN USO (25019) y de los DATOS (25012)</text>
   <text x="355" y="178" class="d3">25040 · proceso de evaluación</text>
   <line x1="20" y1="198" x2="660" y2="198" stroke="#ccc" stroke-width="1"/>
-  <text x="340" y="218" text-anchor="middle" class="k3">Las 8 características de ISO/IEC 25010 y dónde está cada pieza de este tema</text>
+  <text x="340" y="218" text-anchor="middle" class="k3">Las 9 características de ISO/IEC 25010:2023 y dónde está cada pieza de este tema</text>
   <rect x="20" y="228" width="103" height="30" rx="4" fill="#888"/><text x="71" y="247" text-anchor="middle" class="s3">Adecuación func.</text>
   <rect x="129" y="228" width="103" height="30" rx="4" fill="#888"/><text x="180" y="247" text-anchor="middle" class="s3">Eficiencia desemp.</text>
   <rect x="238" y="228" width="103" height="30" rx="4" fill="#888"/><text x="289" y="247" text-anchor="middle" class="s3">Compatibilidad</text>
-  <rect x="347" y="228" width="103" height="30" rx="4" fill="#e89822"/><text x="398" y="247" text-anchor="middle" class="s3">USABILIDAD</text>
+  <rect x="347" y="228" width="103" height="30" rx="4" fill="#e89822"/><text x="398" y="241" text-anchor="middle" class="s3">CAPACIDAD DE</text><text x="398" y="253" text-anchor="middle" class="s3">INTERACCIÓN</text>
   <rect x="456" y="228" width="103" height="30" rx="4" fill="#0055a0"/><text x="507" y="247" text-anchor="middle" class="s3">FIABILIDAD</text>
   <rect x="565" y="228" width="95" height="30" rx="4" fill="#d13c3c"/><text x="612" y="247" text-anchor="middle" class="s3">SEGURIDAD</text>
-  <rect x="238" y="264" width="103" height="26" rx="4" fill="#888"/><text x="289" y="281" text-anchor="middle" class="s3">Mantenibilidad</text>
-  <rect x="129" y="264" width="103" height="26" rx="4" fill="#888"/><text x="180" y="281" text-anchor="middle" class="s3">Portabilidad</text>
+  <rect x="20" y="264" width="103" height="26" rx="4" fill="#888"/><text x="71" y="281" text-anchor="middle" class="s3">Mantenibilidad</text>
+  <rect x="129" y="264" width="103" height="26" rx="4" fill="#888"/><text x="180" y="281" text-anchor="middle" class="s3">Flexibilidad</text>
+  <rect x="238" y="264" width="103" height="26" rx="4" fill="#888"/><text x="289" y="281" text-anchor="middle" class="s3">Protección (safety)</text>
   <path d="M398 258 L398 296" stroke="#e89822" stroke-width="2"/>
   <path d="M507 258 L507 296" stroke="#0055a0" stroke-width="2"/>
   <path d="M612 258 L612 296" stroke="#d13c3c" stroke-width="2"/>
   <rect x="347" y="296" width="103" height="34" rx="4" fill="#fdf1de" stroke="#e89822"/>
-  <text x="398" y="311" text-anchor="middle" class="d3">ACCESIBILIDAD</text>
+  <text x="398" y="311" text-anchor="middle" class="d3">INCLUSIVIDAD</text>
   <text x="398" y="324" text-anchor="middle" class="d3">(subcaracterística)</text>
   <rect x="456" y="296" width="103" height="34" rx="4" fill="#e6eff7" stroke="#0055a0"/>
   <text x="507" y="311" text-anchor="middle" class="d3">DISPONIBILIDAD</text>
@@ -191,6 +192,7 @@
   <text x="612" y="324" text-anchor="middle" class="d3">e integridad</text>
   <text x="30" y="316" class="k3">Las tres piezas que dan título</text>
   <text x="30" y="330" class="k3">a este tema están en 3 lugares distintos</text>
+  <text x="30" y="346" class="d3">Accesibilidad: en 2023 la cubren inclusividad y asistencia al usuario</text>
   <text x="670" y="360" text-anchor="end" style="font:11px system-ui;fill:#666">[Fuente: ISO9241-11; ISO9241-210; ISO25000; ISO25010]</text>
 </svg>
 ```
@@ -631,7 +633,7 @@
   <text x="505" y="277" text-anchor="middle" class="s10">Usuario legítimo que exfiltra el dato</text>
   <rect x="60" y="290" width="560" height="26" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
   <text x="340" y="307" text-anchor="middle" style="font:700 10px system-ui;fill:#0055a0">Sin custodia y recuperación de claves, la confidencialidad se convierte en pérdida de disponibilidad</text>
-  <text x="670" y="326" text-anchor="end" style="font:11px system-ui;fill:#666">[Fuente: NIST-800-111; RFC8446; FIPS197; ENS]</text>
+  <text x="670" y="326" text-anchor="end" style="font:11px system-ui;fill:#666">[Fuente: NIST-800-111; RFC9846; FIPS197; ENS]</text>
 </svg>
 ```
 
